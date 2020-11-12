@@ -1,0 +1,700 @@
+/*page css de réservia*/
+
+body
+{
+	background-color:#F2F2F2;
+    
+
+}
+
+
+
+#page
+{
+	width: 1200px;
+	margin:auto;
+	background-color:#FFFFFF;
+
+}
+
+header, section
+{
+	margin-left: 20px;
+
+}
+
+
+/* entête du site*/
+
+header
+{
+	width:100%; 
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.logo1
+{
+    width: 100px;
+    height: 100%; /*mettre en % la l ou la H pour conserver la proportion*/
+}
+
+#menu
+{
+	margin-right: 20px;
+}
+
+ul
+{
+	list-style-type: none;
+	width: 350px;
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	margin-right: 15px;
+}
+
+
+@font-face 
+{
+    font-family: 'ralewayblack';
+    src: url('raleway-black-webfont.woff2') format('woff2'),
+         url('raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 1ere section chercher ville + filtres */
+
+h2
+{
+	font-size: 1em;
+}
+
+h3
+{
+color: #FFFFFF;
+font-size: 1em;
+}
+
+h4
+{
+color: #FFFFFF;
+font-size: 0.8em;
+}
+
+h2, h3,h4
+{
+	font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+	color:black;
+}
+
+
+#boutonville
+{
+	
+	border:1px solid black;
+	width: 320px;
+	height: 50px;
+	border-radius: 5px 5px 5px 5px;/* bord arrondit*/
+	text-align: right;
+
+}
+
+#boutonville, #rechercher/*pour aligner 2 elements*/
+{
+
+	display: inline-block;
+	flex-direction: row;
+}
+
+#rechercher
+{
+	background-color:#0065FC;
+	height: 50px;
+
+}
+
+button 
+{
+      border: 1px solid #DEEBFF;
+      border-radius: 30px;
+      height: 40px;
+      color: #000000;
+      padding: 10px 14px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+	
+}
+      
+button:hover 
+{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      box-shadow: 2px 4px #DEEBFF;
+}
+      
+.eco, .Famillial, .Romantique, .Animaux
+{
+      background-color: #FFFFFF;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog 
+{ 
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color:#0065FC;
+
+} 
+      
+#filtres
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: : 1px;
+	margin-top: 30px;
+	
+}
+
+h4
+{
+	font-size: 16px;
+
+}
+
+/*ligne infos*/
+
+.fa-info
+{
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color:#0065FC;
+    text-align: center;
+}
+
+
+/*2ème section Hébergement à Marseille*/
+
+#hebergement
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+}
+
+
+
+#hebergementmarseille
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	width: 68%;
+	padding-left: 25px;
+	border-radius: 10px;
+
+}
+
+#leslieux
+{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.cannebiere
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+
+#legende_cannebiere
+{
+    position: relative;/*pour positionner le bandeau*/
+    bottom: 74px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 90px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family:"Arial Black", Arial, Verdana, sans-serif;
+}
+
+.fa-star
+{
+    color:#0065FC;
+}
+
+.texte
+{
+    font-family:"Arial Black", Arial, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+
+.hotelmer
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_hotelmer
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+
+#hebergement1et2
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.hotelduport
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_hotelduport
+{
+    position: relative;/*pour positionner le bandeau*/
+    bottom: 74px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.panier
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_panier
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+
+#hebergement3et4
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.mouettes
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_mouettes
+{
+    position: relative;/*pour positionner le bandeau*/
+    bottom: 74px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.amina
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_amina
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+
+#hebergement5et6
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#hebergement1et2 a 
+{
+text-decoration: none;
+}
+#hebergement3et4 a 
+{
+text-decoration: none;
+}
+#hebergement5et6 a 
+{
+text-decoration: none;
+}
+
+aside
+{
+	display: flex;
+	background-color: #F2F2F2;
+	width: 25%;
+	
+	border-radius: 10px;
+	margin-right:25px;
+
+}
+
+
+
+
+/*3ème section activité à Marseille*/
+
+
+
+.vieuxport
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 363px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF/*pour mettre une ombre à l'image*/
+}
+
+#legende_vieuxport
+{
+    position: relative;/*pour positionner le bandeau sur l'image ne pas mettre absolute qui le met au milieu de la page ??*/
+    bottom: 73px;/*pour positionner le bandeau au bas de la photo en ajustant les px*/
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
+    
+}
+
+#carte1 a 
+{
+text-decoration: none;
+}
+
+
+
+.pomegues
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 200px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_pomegues
+{
+    position: relative;
+    bottom: 74px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.frioul
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 120px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_frioul
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+
+}
+
+
+#carte2et3
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#carte2et3 a 
+{
+text-decoration: none;
+}
+
+
+.calamques
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 363px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF/*pour mettre une ombre à l'image*/
+}
+
+#legende_calamques
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+
+}
+
+#carte4 a 
+{
+text-decoration: none;
+}
+
+
+.notredame
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 150px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_notredame
+{
+    position: relative;
+    bottom: 74px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.parc
+{
+	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 170px;
+    width: 250px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 4px #DEEBFF
+}
+
+#legende_parc
+{
+    position: relative;
+    bottom: 73px;
+    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
+    width: 240px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+}
+
+
+#carte5et6
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#carte5et6 a 
+{
+text-decoration: none;
+}
+
+
+#actimarseille
+{
+	display: flex;
+	justify-content: space-around;
+
+
+
+}
+
+
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background-color:#F2F2F2;
+    margin-top: 25px;
+}
+
+ol
+{
+	list-style-type: none;
+	padding-left: 0px; /*marge interieur definit pour aligner les listes avec les titres*/
+}
+
+#propos
+{
+	width: 30%;
+	margin-left: 20px;/*pour aligner le texte avec les autres sections*/
+}
+
+#noshebergements
+{
+	width: 25%
+}
+
+#assistance
+{
+	width: 25%
+}
+
+
+
+
+
+
