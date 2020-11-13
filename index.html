@@ -36,20 +36,18 @@
                     <h2>Trouver votre hébergement pour des vacances de rève</h2>
                     <p>En plein centre ville ou en pleine nature</p>
 
-              
-                <div id="boutonville">
-                <!-- bouton rechercher la ville-->    
-                    <span style="font-size: 2em;"><i class="fas fa-map-marker-alt"></i>
-                    <label for="search"></label>
-                    <input type="search" name="search" id="search" />
-                    </span>
+            <!--zone de recherche icone + formulaire de recherhce + bouton-->
                 
-                    <div id="rechercher">
-                    <h3>Rechercher</h3>
+                <div id="rechercherville">
+                
+                    <button class="map"><i class="fas fa-map-marker-alt"></i></button><!--faire un button non fonctionnel-->
+                    <div id="ville">
+                        <form method="post" action="traitement.php">
+                        <input type="search" name="ville" id="search" placeholder="Votre ville" required/></form>
                     </div>
-                    
+                    <button class="rechercher">Rechercher</button>        
 
-                </div></br>
+                </div>
             
             <!--ligne des filtes : texte + 4 boutons -->
 

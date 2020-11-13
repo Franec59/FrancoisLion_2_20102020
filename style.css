@@ -69,57 +69,81 @@ ul
 
 /* 1ere section chercher ville + filtres */
 
+/*titre + texte*/
 h2
 {
 	font-size: 1.3em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    color:black;
 }
 
-h3
+/*bouton rechercher la ville en 3 parties*/
+
+.map
 {
-color: #FFFFFF;
+border: 1px solid #F2F2F2;/*creer une border autour de l icone map*/
+border-radius: 10px 0px 0px 10px;
+height: 50px;
+width: 50px;/*regler la longueur en fonction du texte du bouton */
+background-color: #F2F2F2;
 font-size: 1em;
+font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+
+
 }
 
-/*h4
+
+#ville
 {
+border: 1px solid #F2F2F2; /*creer une border autour de l icone map*/
+height: 48px;
+width: 250px;/*regler la longueur en fonction du texte du bouton */
+
+
+}
+
+.rechercher
+{
+border: 1px solid #F2F2F2;/*creer une border autour de l icone map*/
+border-radius: 0px 10px 10px 0px;
+height: 50px;
+width: 150px;/*regler la longueur en fonction du texte du bouton */
+background-color: #0065FC;
+font-size: 1em;
 color: #FFFFFF;
-font-size: 0.8em;
-}*/
-
-h2, h3
-{
-	font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
-	color:black;
-}
-
-
-#boutonville
-{
-	
-	border:1px solid black;
-	width: 320px;
-	height: 50px;
-	border-radius: 5px 5px 5px 5px;/* bord arrondit*/
-	text-align: right;
+font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
 
 }
 
-#boutonville, #rechercher/*pour aligner 2 elements*/
+#search
 {
-
-	display: inline-block;
-	flex-direction: row;
-}
-
-#rechercher
-{
-	background-color:#0065FC;
-	height: 50px;
+border:none;
+margin-top:2px;
+height: 45px;
+width: 245px;
+background-color: #FFFFFF;
+font-size: 1em;
+font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
 
 }
 
 
-/*boutons clicables avec icone dans une bulle + titre du bouton*/
+#rechercherville
+{
+  display: flex;
+  margin-top: 25px;
+}
+
+.rechercher:hover
+{
+  background-color: #FFFFFF;
+  color:#0065FC;
+  box-shadow: 2px 4px #0065FC;
+}
+
+
+
+/*boutons de filtres clicables avec icone dans une bulle + titre du bouton*/
 
 #filtres
 {
