@@ -2,7 +2,7 @@
 
 body
 {
-	background-color:#F2F2F2;
+	/*background-color:#F2F2F2;pour supprimer le fond derriere le fond de la page*/
     
 
 }
@@ -11,7 +11,7 @@ body
 
 #page
 {
-	width: 1200px;
+	width: 100%;/*le site doit faire la largeur de la page*/
 	margin:auto;
 	background-color:#FFFFFF;
 
@@ -184,7 +184,7 @@ h4
 
 /*2ème section Hébergement à Marseille*/
 
-#hebergement
+#hebergement/*block qui englobe herbergement à Marseille et aside*/
 {
 	display: flex;
 	flex-direction: row;
@@ -195,13 +195,15 @@ h4
 
 
 
-#hebergementmarseille
+#hebergementmarseille /*titre et les lieux*/
 {
 	display: flex;
 	flex-direction: column;
 	background-color: #F2F2F2;
-	width: 68%;
+	width: 60%;
+    height: 800px;/*pour la hauteur du block hebergement faire pareil pour aside*/
 	padding-left: 25px;
+    padding-right: 25px;
 	border-radius: 10px;
 
 }
@@ -209,8 +211,9 @@ h4
 #leslieux
 {
 	display: flex;
-	justify-content: space-around;
-
+	justify-content: space-between; /*mettre between + des paddings pour positionner les éléments dans le block*/
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .cannebiere
@@ -232,26 +235,36 @@ h4
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
     height: 90px;
-    padding-top: 15px;
+    padding-top: 1px;
     padding-left: 10px;
-    font-weight: normal;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family:"Arial Black", Arial, Verdana, sans-serif;
+    
+    
 }
 
-.fa-star
+.titredescases
 {
-    color:#0065FC;
+    font-size: 0.8em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
 }
 
-.texte
+.starblue
 {
-    font-family:"Arial Black", Arial, Verdana, sans-serif;
-    font-size: 0.8em;
-    font-weight: normal;
+    color: #0065FC;
 }
+
+.stargrise
+{
+    color: #F2F2F2;
+}
+
+.prix
+{
+    font-weight: bold;
+}
+
 
 
 .hotelmer
@@ -271,14 +284,13 @@ h4
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 30px;
-    padding-top: 15px;
+    height: 90px;
+    padding-top: 0;/*modif ecart entre légende et photo*/
     padding-left: 10px;
-    font-weight: bold;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
 }
 
 
@@ -306,14 +318,13 @@ h4
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 30px;
-    padding-top: 15px;
+    height: 90px;
+    padding-top: 1px;
     padding-left: 10px;
-    font-weight: bold;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
 }
 
 .panier
@@ -333,14 +344,13 @@ h4
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 30px;
-    padding-top: 15px;
+    height: 90px;
+    padding-top: 1px;
     padding-left: 10px;
-    font-weight: bold;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
 }
 
 
@@ -369,14 +379,13 @@ h4
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 30px;
-    padding-top: 15px;
+    height: 90px;
+    padding-top: 1px;
     padding-left: 10px;
-    font-weight: bold;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
 }
 
 .amina
@@ -396,14 +405,13 @@ h4
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 30px;
-    padding-top: 15px;
+    height: 90px;
+    padding-top: 1px;
     padding-left: 10px;
-    font-weight: bold;
+    line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    font-size: 0.8em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    
 }
 
 
@@ -427,16 +435,136 @@ text-decoration: none;
 text-decoration: none;
 }
 
-aside
+
+aside/*partie les plus populaires*/
 {
 	display: flex;
+    flex-direction: column;
+
 	background-color: #F2F2F2;
-	width: 25%;
-	
+	width: 30%;
+	height: 800px;
 	border-radius: 10px;
 	margin-right:25px;
+    padding-left: 25px;
 
 }
+
+
+#populaires/*block qui englobe les 3 cartes*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.soleilmatin/*photo*/
+{
+    position: absolute;
+    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 150px;
+    width: 150px;
+    border-radius: 0px 10px 10px 0px; /*pour arrondir les angles*/
+    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
+    
+    
+}
+
+
+#legende_soleilmatin/*bandeau blanc avec la legende*/
+{
+    
+    border-radius: 10px 10px 10px 10px;/* bord arrondit*/
+    width: 400px;
+    height: 180px;
+    padding-top: 1px;
+    padding-left: 180px;/*A RAJOUTER SUR LES AUTRES CARTES*/
+
+    line-height: 1.5em;
+    background-color: #FFFFFF;
+    color: black;
+    /*display: flex;/*pour positionner la legende à droite*/
+    /*justify-content: flex-end;A SUPPIMER SUR LES AUTRES CARTES*/
+    margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
+    margin-left: 20px;/*pour le bord gauche par rapport au block aside*/
+    margin-right: 25px;
+
+}
+
+#populaires a 
+{
+text-decoration: none;
+}
+
+.coeurdeau
+{
+    position: absolute;
+    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 150px;
+    width: 150px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
+    
+    
+}
+
+
+#legende_coeurdeau
+{
+    
+    border-radius: 10px 10px 10px 10px;/* bord arrondit*/
+    width: 400px;
+    height: 180px;
+    padding-top: 1px;
+    padding-left: 180px;/*a voir */
+    line-height: 1.5em;
+    background-color: #FFFFFF;
+    color: black;
+    /*display: flex;/*pour positionner la legende à droite*/
+    justify-content: flex-end;/*a modifier pour aligner sur l'image*/
+    margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
+    margin-left: 20px;
+    margin-right: 25px;
+
+}
+
+.bleublanc
+{
+    position: absolute;
+    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    height: 150px;
+    width: 150px;
+    border-radius: 10px; /*pour arrondir les angles*/
+    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
+    
+    
+}
+
+
+#legende_bleublanc
+{
+    
+    border-radius: 10px 10px 10px 10px;/* bord arrondit*/
+    width: 400px;
+    height: 180px;
+    padding-top: 1px;
+    /*padding-left: 5px;/*a voir */
+    line-height: 1.5em;
+    background-color: #FFFFFF;
+    color: black;
+    display: flex;/*pour positionner la legende à droite*/
+    justify-content: flex-end;/*a modifier pour aligner sur l'image*/
+    margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
+    margin-left: 20px;
+    margin-right: 25px;
+
+}
+
+
+
+
 
 
 
