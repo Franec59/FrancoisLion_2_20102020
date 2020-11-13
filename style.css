@@ -28,8 +28,7 @@ header, section
 
 header
 {
-	width:100%; 
-	
+	width:100%; 	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -72,7 +71,7 @@ ul
 
 h2
 {
-	font-size: 1em;
+	font-size: 1.3em;
 }
 
 h3
@@ -81,13 +80,13 @@ color: #FFFFFF;
 font-size: 1em;
 }
 
-h4
+/*h4
 {
 color: #FFFFFF;
 font-size: 0.8em;
-}
+}*/
 
-h2, h3,h4
+h2, h3
 {
 	font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
 	color:black;
@@ -119,67 +118,240 @@ h2, h3,h4
 
 }
 
-button 
+
+/*boutons clicables avec icone dans une bulle + titre du bouton*/
+
+#filtres
 {
-      border: 1px solid #DEEBFF;
-      border-radius: 30px;
-      height: 40px;
-      color: #000000;
-      padding: 10px 14px;
-      font-size: 16px;
-      cursor: pointer;
-      font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
-	
+    display: flex;
+    margin-top: 25px;
 }
-      
-button:hover 
+
+h4
+{
+    font-size: 1em;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    color:black;
+
+}
+
+.titrefiltres
+{
+    position: relative;/*permet de regler le decalage verticale en alignant le titre avec les boutons*/
+    bottom: 12px;
+}
+
+/*bouton economique*/
+.eco /*bouton icone dans le bouton eco*/
+{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+    cursor: pointer;
+    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    bottom:2px; /* reglage du decalage de la bulle*/    
+}
+            
+.b-eco /*bouton texte*/
+{
+    border: 1px solid #FFFFFF;/*bordure blache pour être masquée*/
+    border-radius: 5px 30px 30px 5px; /* 5px pour adoucir l'autre bord*/
+    height: 40px;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.b-eco:hover/*seul cet element a un effet au survol pour un effet d'ensemble plus propre*/
 {
       background-color: #0065FC;
       color:#FFFFFF;
       box-shadow: 2px 4px #DEEBFF;
 }
-      
-.eco, .Famillial, .Romantique, .Animaux
-{
-      background-color: #FFFFFF;
-}
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog 
-{ 
-	background-color: #DEEBFF;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	color:#0065FC;
-
-} 
-      
-#filtres
+#boutoneco/*bouton qui va englober le bouton icone + le bouton texte*/
 {
-	display: flex;
-	flex-direction: row;
-	margin-left: : 1px;
-	margin-top: 30px;
-	
-}
 
-h4
-{
-	font-size: 16px;
+border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
+border-radius: 30px;
+height: 40px;
+width: 167px;/*regler la longueur en fonction du texte du bouton */
+background-color: #FFFFFF;
+margin-left: 20px;/*pour decoller les boutons les uns des autres */
 
 }
 
-/*ligne infos*/
 
-.fa-info
+/*bouton Famillial*/
+.fami /*bouton icone dans le bouton eco*/
 {
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+    cursor: pointer;
+    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    bottom:2px; /* reglage du decalage de la bulle*/    
+}
+            
+.b-fami /*bouton texte*/
+{
+    border: 1px solid #FFFFFF;/*bordure blache pour être masquée*/
+    border-radius: 5px 30px 30px 5px; /* 5px pour adoucir l'autre bord*/
+    height: 40px;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.b-fami:hover/*seul cet element a un effet au survol pour un effet d'ensemble plus propre*/
+{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      box-shadow: 2px 4px #DEEBFF;
+}
+
+#boutonfami/*bouton qui va englober le bouton icone + le bouton texte*/
+{
+
+border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
+border-radius: 30px;
+height: 40px;
+width: 135px;/*regler la longueur en fonction du texte du bouton */
+background-color: #FFFFFF;
+margin-left: 20px;
+
+}
+
+/*bouton Romantique*/
+.roman /*bouton icone dans le bouton eco*/
+{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+    cursor: pointer;
+    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    bottom:2px; /* reglage du decalage de la bulle*/    
+}
+            
+.b-roman /*bouton texte*/
+{
+    border: 1px solid #FFFFFF;/*bordure blache pour être masquée*/
+    border-radius: 5px 30px 30px 5px; /* 5px pour adoucir l'autre bord*/
+    height: 40px;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.b-roman:hover/*seul cet element a un effet au survol pour un effet d'ensemble plus propre*/
+{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      box-shadow: 2px 4px #DEEBFF;
+}
+
+#boutonroman/*bouton qui va englober le bouton icone + le bouton texte*/
+{
+
+border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
+border-radius: 30px;
+height: 40px;
+width: 164px;/*regler la longueur en fonction du texte du bouton */
+background-color: #FFFFFF;
+margin-left: 20px;
+
+}
+
+/*bouton animaux*/
+.ani /*bouton icone dans le bouton eco*/
+{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+    cursor: pointer;
+    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    bottom:2px; /* reglage du decalage de la bulle*/    
+}
+            
+.b-ani /*bouton texte*/
+{
+    border: 1px solid #FFFFFF;/*bordure blache pour être masquée*/
+    border-radius: 5px 30px 30px 5px; /* 5px pour adoucir l'autre bord*/
+    height: 40px;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.b-ani:hover/*seul cet element a un effet au survol pour un effet d'ensemble plus propre*/
+{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      box-shadow: 2px 4px #DEEBFF;
+}
+
+#boutonani/*bouton qui va englober le bouton icone + le bouton texte*/
+{
+
+border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
+border-radius: 30px;
+height: 40px;
+width: 224px;/*regler la longueur en fonction du texte du bouton */
+background-color: #FFFFFF;
+margin-left: 20px;
+
+}
+
+
+/*ligne infos : icone dans une bulle + texte*/
+
+
+#ligneinfos/*block qui englobe le bouton et le texte*/
+{
+    display: flex;/*pour aligner les block*/
+    
+}
+
+.texteinfo/*englobe la partie texte*/
+{
+position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+bottom : 10px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+
+}
+
+.infos /*ne pas mettre les codes sur button mais */
+{
+
     border: 1px solid #DEEBFF;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     color:#0065FC;
-    text-align: center;
+    background-color: #FFFFFF;
+
 }
+
 
 
 /*2ème section Hébergement à Marseille*/
