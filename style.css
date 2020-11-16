@@ -4,9 +4,7 @@ body
 {
 	/*background-color:#F2F2F2;pour supprimer le fond derriere le fond de la page*/
     
-
 }
-
 
 
 #page
@@ -815,7 +813,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 363px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -827,7 +825,7 @@ text-decoration: none;
     position: relative;/*pour positionner le bandeau sur l'image ne pas mettre absolute qui le met au milieu de la page ??*/
     bottom: 73px;/*pour positionner le bandeau au bas de la photo en ajustant les px*/
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -851,7 +849,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 200px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -863,7 +861,7 @@ text-decoration: none;
     position: relative;
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -878,7 +876,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 120px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -890,7 +888,7 @@ text-decoration: none;
     position: relative;
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -920,7 +918,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 363px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -932,7 +930,7 @@ text-decoration: none;
     position: relative;
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -954,7 +952,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 150px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -966,7 +964,7 @@ text-decoration: none;
     position: relative;
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -981,7 +979,7 @@ text-decoration: none;
 {
 	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 170px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px; /*pour arrondir les angles*/
     
     margin-bottom: 25px;
@@ -993,7 +991,7 @@ text-decoration: none;
     position: relative;
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
+    width: 290px;
     height: 30px;
     padding-top: 15px;
     padding-left: 10px;
@@ -1009,6 +1007,7 @@ text-decoration: none;
 {
 	display: flex;
 	flex-direction: column;
+    margin-right: 30px;
 }
 
 #carte5et6 a 
@@ -1020,13 +1019,21 @@ text-decoration: none;
 #actimarseille
 {
 	display: flex;
-	justify-content: space-around;
-
-
+	justify-content: space-between;
+    height: 450px;
 
 }
 
-
+#carteparc/*a rajouter pour rapprocher les 2 cartes 5&6*/
+{
+    position:relative;
+    bottom: 45px;
+}
+#cartefrioul/*a rajouter pour rapprocher les 2 cartes 5&6*/
+{
+    position:relative;
+    bottom: 45px;
+}
 
 /* Footer */
 
@@ -1051,12 +1058,12 @@ ol
 
 #noshebergements
 {
-	width: 25%
+	width: 35%
 }
 
 #assistance
 {
-	width: 25%
+	width: 35%
 }
 
 #propos a 
