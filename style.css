@@ -430,8 +430,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 1px;
+    height: 80px;
+    
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -480,8 +480,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 0;/*modif ecart entre légende et photo*/
+    height: 80px;
+    /*padding-top: 0;/*modif ecart entre légende et photo A SUPPRIMER */
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -514,8 +514,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 1px;
+    height: 80px;
+    
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -540,8 +540,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 1px;
+    height: 80px;
+    
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -575,8 +575,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 74px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 1px;
+    height: 80px;
+    
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -601,8 +601,8 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     bottom: 73px;
     border-radius: 0px 0px 10px 10px;/* bord arrondit*/
     width: 240px;
-    height: 90px;
-    padding-top: 1px;
+    height: 80px;
+    
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -655,15 +655,30 @@ aside/*partie les plus populaires*/
 
 }
 
+#titrepopu
+{
+    margin-left: 25px;
+    display: flex;
+
+
+}
+
+.graph
+{
+    position: relative;/*pour pouvoir aligner verticalement l icone avec le titre*/
+    margin-left: 170px;/* permet de regler l'ecart entre le titre et l icone*/
+    margin-top: 25px;/*permet de regler la position verticale de l'icone*/
+}
 
 .soleilmatin/*photo*/
 {
     position: absolute;
-    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 150px;
-    width: 150px;
-    border-radius: 0px 10px 10px 0px; /*pour arrondir les angles*/
-    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
+    margin-top: 33px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    margin-bottom: 10px;
+    height: 155px;
+    width: 155px;
+    border-radius: 10px 0px 0px 10px; /*pour arrondir les angles*/
+    margin-left: 28px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
     
     
 }
@@ -673,19 +688,18 @@ aside/*partie les plus populaires*/
 {
     
     border-radius: 10px 10px 10px 10px;/* bord arrondit*/
-    width: 400px;
-    height: 180px;
+    width: 230px;
+    height: 170px;
     padding-top: 1px;
-    padding-left: 180px;/*A RAJOUTER SUR LES AUTRES CARTES*/
+    padding-left: 180px;
 
     line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    /*display: flex;/*pour positionner la legende à droite*/
-    /*justify-content: flex-end;A SUPPIMER SUR LES AUTRES CARTES*/
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
     margin-left: 20px;/*pour le bord gauche par rapport au block aside*/
     margin-right: 25px;
+    margin-top: 25px;
 
 }
 
@@ -694,14 +708,30 @@ aside/*partie les plus populaires*/
 text-decoration: none;
 }
 
+#starmatin
+{
+padding-top: 55px;
+
+}
+
+#stareau, #startoutbb /*decalage différent car 3 lignes de texte*/
+{
+padding-top: 32px;
+
+}
+
+
+
+
 .coeurdeau
 {
     position: absolute;
-    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 150px;
-    width: 150px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
+    margin-top: 33px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    margin-bottom: 10px;
+    height: 155px;
+    width: 155px;
+    border-radius: 10px 0px 0px 10px; /*pour arrondir les angles*/
+    margin-left: 28px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
     
     
 }
@@ -711,30 +741,30 @@ text-decoration: none;
 {
     
     border-radius: 10px 10px 10px 10px;/* bord arrondit*/
-    width: 400px;
-    height: 180px;
+    width: 230px;
+    height: 170px;
     padding-top: 1px;
-    padding-left: 180px;/*a voir */
+    padding-left: 180px;
+
     line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    /*display: flex;/*pour positionner la legende à droite*/
-    justify-content: flex-end;/*a modifier pour aligner sur l'image*/
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    margin-left: 20px;
+    margin-left: 20px;/*pour le bord gauche par rapport au block aside*/
     margin-right: 25px;
+    margin-top: 25px;
 
 }
 
 .bleublanc
 {
     position: absolute;
-    margin-top: 15px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 150px;
-    width: 150px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    padding-left: 32px;/*pour positioner la photo sur le bord du bandeau blanc mais ça annule les bords arrondis a droite ?*/
-    
+    margin-top: 33px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
+    margin-bottom: 10px;
+    height: 155px;
+    width: 155px;
+    border-radius: 10px 0px 0px 10px; /*pour arrondir les angles*/
+    margin-left: 28px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
     
 }
 
@@ -743,26 +773,38 @@ text-decoration: none;
 {
     
     border-radius: 10px 10px 10px 10px;/* bord arrondit*/
-    width: 400px;
-    height: 180px;
+    width: 230px;
+    height: 170px;
     padding-top: 1px;
-    /*padding-left: 5px;/*a voir */
+    padding-left: 180px;
+
     line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
-    display: flex;/*pour positionner la legende à droite*/
-    justify-content: flex-end;/*a modifier pour aligner sur l'image*/
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    margin-left: 20px;
+    margin-left: 20px;/*pour le bord gauche par rapport au block aside*/
     margin-right: 25px;
+    margin-top: 25px;
 
 }
 
+#afficherplus
+{
+    margin-left: 25px;
+    margin-top: 710px;
+    position: absolute;
+    text-decoration: none;
+}
 
+#afficherplus a 
+{
+text-decoration: none;
+}
 
-
-
-
+#heber1
+{
+  margin-left: 25px;  
+}
 
 
 /*3ème section activité à Marseille*/
@@ -1017,8 +1059,20 @@ ol
 	width: 25%
 }
 
+#propos a 
+{
+text-decoration: none;
+color: black;
+}
 
+#noshebergements a 
+{
+text-decoration: none;
+color: black;
+}
 
-
-
-
+#assistance a 
+{
+text-decoration: none;
+color: black;
+}
