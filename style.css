@@ -395,7 +395,7 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 	flex-direction: column;
 	background-color: #F2F2F2;
 	width: 60%;
-    height: 800px;/*pour la hauteur du block hebergement faire pareil pour aside*/
+    height: 750px;/*pour la hauteur du block hebergement faire pareil pour aside*/
 	padding-left: 25px;
     padding-right: 25px;
 	border-radius: 10px;
@@ -410,33 +410,33 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
     padding-right: 25px;
 }
 
-.cannebiere
+
+.cannebiere /*nouveau codage*/
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
+    position: absolute;
+    height: 170px;/*taille à modifier*/
+    width: 270px;/*taille à modifier*/
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
     
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
 }
 
 
-#legende_cannebiere
+#legende_cannebiere /* nouveau codage*/
 {
-    position: relative;/*pour positionner le bandeau*/
-    bottom: 74px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
     
+    border-radius: 10px 10px 10px 10px;/* bord arrondit*/
+    width: 270px;/*taille modifié*/
+    height: 90px;
+    padding-top: 165px;/*hauteur à modifier*/
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
     color: black;
     
-    
 }
+
 
 .titredescases
 {
@@ -463,23 +463,20 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 
 .hotelmer
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
+	position: absolute;
+    height: 170px;
+    width: 270px;
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #legende_hotelmer
 {
-    position: relative;
-    bottom: 73px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
-    /*padding-top: 0;/*modif ecart entre légende et photo A SUPPRIMER */
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 90px;
+    padding-top: 165px;
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -497,23 +494,20 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 
 .hotelduport
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
+	position: absolute;
+    height: 170px;
+    width: 270px;
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #legende_hotelduport
 {
-    position: relative;/*pour positionner le bandeau*/
-    bottom: 74px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
-    
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 90px;
+    padding-top: 165px;
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -523,23 +517,20 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 
 .panier
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
+	position: absolute;
+    height: 170px;
+    width: 270px;
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #legende_panier
 {
-    position: relative;
-    bottom: 73px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
-    
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 90px;
+    padding-top: 165px;
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -558,23 +549,20 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 
 .mouettes
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
+	position: absolute;
+    height: 170px;
+    width: 270px;
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #legende_mouettes
 {
-    position: relative;/*pour positionner le bandeau*/
-    bottom: 74px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
-    
+   border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 90px;
+    padding-top: 165px;
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -584,23 +572,20 @@ bottom : 10px;/*permet de regler la position du texte pour l'aligner verticaleme
 
 .amina
 {
-	margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
-    height: 200px;
-    width: 250px;
-    border-radius: 10px; /*pour arrondir les angles*/
-    
-    margin-bottom: 25px;
-    box-shadow: 4px 4px 4px #DEEBFF
+	position: absolute;
+    height: 170px;
+    width: 270px;
+    border-radius: 10px 10px 0px 0px; /*pour arrondir les angles*/
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #legende_amina
 {
-    position: relative;
-    bottom: 73px;
-    border-radius: 0px 0px 10px 10px;/* bord arrondit*/
-    width: 240px;
-    height: 80px;
-    
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 90px;
+    padding-top: 165px;
     padding-left: 10px;
     line-height: 1.5em;
     background-color: #FFFFFF;
@@ -629,6 +614,26 @@ text-decoration: none;
 text-decoration: none;
 }
 
+#carte2/* a rajouter pour mettre ecart entre les vignettes*/
+{
+
+margin-top: 50px;
+
+}
+
+#carte8
+{
+
+margin-top: 50px;
+
+}
+
+#carte6
+{
+
+margin-top: 50px;
+
+}
 
 aside/*partie les plus populaires*/
 {
@@ -637,7 +642,7 @@ aside/*partie les plus populaires*/
 
 	background-color: #F2F2F2;
 	width: 30%;
-	height: 800px;
+	height: 750px;
 	border-radius: 10px;
 	margin-right:25px;
     padding-left: 25px;
@@ -789,7 +794,7 @@ padding-top: 32px;
 #afficherplus
 {
     margin-left: 25px;
-    margin-top: 710px;
+    margin-top: 660px;
     position: absolute;
     text-decoration: none;
 }
