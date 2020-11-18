@@ -1134,8 +1134,8 @@ color: black;
 /*partie médiaquerries*/
 
 
-@media all and (max-width: 720px)
-/*pour les écrans plus petit que 720px*/
+@media screen and (max-width: 720px)
+/*Breakpoint pour les mobiles 720px noter handheld à la place de screnn ?*/
 
 {
 
@@ -1458,7 +1458,7 @@ header
     aside/*partie les plus populaires*/
     {
     
-    width: 420px;
+    width: 100%;
     height: 800px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1639,3 +1639,430 @@ header
 
 
 }
+
+
+
+@media screen and (min-width: 720px) and (max-width: 1024px)
+/*Breakpoint pour les tablettes 1024px*/
+
+{
+
+    header /*juste pour moi visualiser*/
+    {
+    
+        background-color: red;
+    }
+
+    .heber1
+    {
+    padding-left: 300px;
+    }
+
+    
+    #filtres
+    {
+        flex-direction: column;
+        
+    }
+
+    #boutonfami, #boutonroman, #boutonani
+    {
+        margin-top:10px;
+    }
+
+    #mqecofa
+    {
+        display: flex;
+
+    }
+
+    #boutonfami
+    {
+    position: relative;/*permet de regler le decalage verticale pour aligner les 2 boutons*/
+    bottom: 12px;
+    }
+
+#ligneinfos
+    {
+        margin-top: 20px;
+    }
+
+
+    /*section hébergement à marseille*/
+
+
+    #hebergement/*block qui englobe herbergement à Marseille et aside*/
+    {
+    
+    flex-direction: column-reverse;/* pour mettre la partie aside en 1er*/
+    
+    }
+
+
+    #leslieux
+    {
+    
+    display: flex;
+
+    flex-wrap: wrap;
+
+    }
+
+    #hebergement1et2
+    {
+        flex-direction: row;
+        align-items: baseline;
+
+    }
+
+    #hebergement3et4
+    {
+        flex-direction: row;
+    }
+
+    #hebergement5et6
+    {
+        flex-direction: row;
+    }
+
+    #carte2, #carte8, #carte6
+    {
+        margin-left: 20px;
+    }
+
+
+
+    #hebergementmarseille /*titre et les lieux*/
+    {
+        margin-top: 25px;/*pour espacer les blocks hébergements et aside*/
+        width: 100%;
+        height: 1000px;/*pour redimensionner la hauteur du block hebergement*/
+        background-color: #FFFFFF;
+        
+        padding-left: 1px;
+        padding-right: 1px;
+        
+    }
+
+/*il faut redimentionner les cartes hébergements*/
+
+    
+    .cannebiere
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_cannebiere
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+    .hotelmer
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_hotelmer
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+   .hotelduport
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_hotelduport
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+    .panier
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_panier
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+    .mouettes
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_mouettes
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+    .amina
+    {
+    height: 150px;
+    width: 350px;
+    }
+
+    #legende_amina
+    {
+    width: 350px;
+    height: 90px;
+    padding-top: 140px;/*hauteur à modifier*/
+
+    }
+
+
+    #mqcarte3
+    {
+        margin-top: 50px;
+    }
+
+    #mqcarte5
+    {
+        margin-top: 50px;
+    }
+
+    #afficherplus
+    {
+    
+    margin-top: 1870px;
+    
+    }
+
+    #legende_cannebiere, #legende_hotelmer, #legende_hotelduport, #legende_panier, #legende_mouettes, #legende_amina
+
+    {
+        box-shadow: 0px 0px 16px #DEEBFF;
+    }
+
+
+    aside/*partie les plus populaires*/
+    {
+    
+    width: 100%;/*pour sur la largeur max*/
+    height: 800px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 0px 0px;/*les coin ne sont plus arrondis !*/
+    
+    }
+
+    #titrepopu
+    {
+    width: 650px;/*pour que le titre soit sur une seule ligne*/
+
+    }
+
+    .graph
+    {
+    
+    margin-left: 120px;/* pour ramener l icone dans la block*/
+    
+    }
+
+    #legende_soleilmatin, #legende_coeurdeau, #legende_bleublanc/*pour adapter la largeur des cartes*/
+    {
+    
+    width: 190px;
+    
+    }
+
+    #populaires/*block qui englobe les 3 cartes*/
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+    
+
+
+    /*section activités à marseille*/
+
+    #actimarseille
+    {
+        
+        flex-direction: column;
+        height: 1250px;
+        margin-left: 25px;
+
+    }
+
+    #activites
+    {
+        margin-left: 25px;
+    }
+
+    /*il faut redimentionner toutes les cartes et réajuster les alignements*/
+    .vieuxport
+    {
+    
+    height: 200px;
+    width: 380px;
+
+    
+    }
+
+    #legende_vieuxport
+    {
+    
+    width: 370px;
+    height: 30px;
+    
+    }
+
+    .pomegues
+    {
+    height: 200px;
+    width: 380px;
+    }
+
+    #legende_pomegues
+    {
+    width: 370px;
+    height: 30px;
+    }
+
+    .frioul
+    {
+    height: 200px;
+    width: 380px;
+
+    }
+
+    #legende_frioul
+    {
+    width: 370px;
+    height: 30px;
+
+    }
+
+
+
+    .calamques
+    {
+    height: 200px;
+    width: 380px;
+    }
+
+    #legende_calamques
+    {
+    width: 370px;
+    height: 30px;
+
+    }
+
+
+    .notredame
+    {
+    height: 200px;
+    width: 380px;
+    }
+
+    #legende_notredame
+    {
+    width: 370px;
+    height: 30px;
+    }
+
+    .parc
+    {
+    height: 200px;
+    width: 380px;
+    }
+
+    #legende_parc
+    {
+    width: 370px;
+    height: 30px;
+    }
+
+    #carte4/*pour remonter la carte des calamques*/
+    {
+        position:relative;
+        bottom: 130px;
+
+    }
+
+    #carte2et3
+    {
+        position:relative;
+        bottom: 40px;
+
+    }
+
+    #carte5et6
+    {
+        position:relative;
+        bottom: 170px;
+    }
+
+
+
+    footer
+    {
+        flex-direction: column;
+        margin-top: 250px;
+        width: 420px;/*pour aligner avec le block aside*/
+        margin-left: 25px;
+    }
+
+    #propos
+    {
+    width: 350px;
+    margin-left: 25px;/*pour aligner le texte avec les autres sections*/
+    line-height: 1.5em;/*pour mettre un peu d'espace entre les lignes*/
+    }
+
+    #noshebergements
+    {
+    width: 350px;
+    margin-left: 25px;
+    line-height: 1.5em;
+    }
+
+    #assistance
+    {
+    width: 350px;
+    margin-left: 25px;
+    line-height: 1.5em;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
