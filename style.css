@@ -10,7 +10,7 @@
 
 }
 
-header, section
+section
 {
 	margin-left: 20px;
 
@@ -19,41 +19,60 @@ header, section
 
 /* entête du site*/
 
+/*partie modifiée*/
 header
 {
-	width:100%; 	
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
 
 }
+
+hr
+    {
+        display: none;
+    }
 
 .logo1
 {
     width: 100px;
     height: 100%; /*mettre en % la l ou la H pour conserver la proportion*/
+    margin-left: 20px;
 }
 
-#menu
+.heber1, .acti1, .inscri1
 {
-	margin-right: 20px;
+    
+    list-style-type: none;
+    margin-right: 25px;
+    font-size: 0.8em;
+    font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
+    
+
 }
 
-#menu a
+.heber1
+{
+    padding-left: 1100px;
+}
+
+
+.heber1 a, .acti1 a, .inscri1 a
 {
     text-decoration: none;
 }
 
-ul
+@font-face 
 {
-	list-style-type: none;
-	width: 350px;
-	display: flex;
-    flex-direction: row;
-	justify-content: space-between;
-	margin-right: 15px;
-}
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 @font-face 
 {
@@ -71,8 +90,15 @@ ul
 h2
 {
 	font-size: 1.3em;
-    font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
+    font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
     color:black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.soustexte
+{
+    font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
 }
 
 /*bouton rechercher la ville en 3 parties*/
@@ -139,7 +165,10 @@ font-family: 'ralewayblack', "Arial Black", Arial, Verdana, sans-serif;
   box-shadow: 2px 4px #0065FC;
 }
 
-
+.loupe/*pour mq mobile, ne doit pas apparaitre ici !*/
+{
+    display:none;
+}
 
 /*boutons de filtres clicables avec icone dans une bulle + titre du bouton*/
 
@@ -345,6 +374,12 @@ margin-left: 20px;
 }
 
 
+#mqecofa/*block rajouter pour mqmobile, les garde alignés*/
+{
+    display: flex;
+}
+
+
 /*ligne infos : icone dans une bulle + texte*/
 
 
@@ -359,6 +394,7 @@ margin-left: 20px;
 position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
 margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
 bottom : 10px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
 
 }
 
@@ -1046,7 +1082,7 @@ footer
 {
     display: flex;
     background-color:#F2F2F2;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 ol
@@ -1104,9 +1140,106 @@ color: black;
 {
 
 
-    header
+
+header
     {
-        flex-direction: column;
+       width: 480px;
+       flex-wrap: wrap;
+       margin-bottom: 70px;
+    
+    }
+
+    .logo1
+    {
+        order: 1;
+        margin-left: -120px;
+        
+    }
+
+    .heber1
+    {
+    order: 3;
+    padding-top: 50px;
+    margin-left: 70px;
+    font-size: 1em;
+    font-weight: bold;
+
+    }
+
+    .acti1
+    {
+    order: 4;
+    padding-top: 50px;
+    margin-right: 100px;
+    font-size: 1em;
+    font-weight: bold;
+
+
+    }
+
+    .inscri1
+    {
+    order: 2;
+    padding-left: 180px;
+    padding-right: 25px;
+    font-size: 1.2em;
+    position:relative;
+    margin-top: 16px;
+    font-weight: bold;
+
+    }
+
+    .heber1
+    {
+    padding-left:1px;
+    }
+
+
+    hr
+    {
+        display: flex;
+        height: 5px;
+        background-color: #0065FC;
+        margin-left: 0;
+        border:none;
+    }
+
+
+    .ligneheber
+    {
+        position:absolute;
+        margin-top: 150px;
+        width: 250px;
+        
+    }
+
+
+    .ligneacti
+    {
+        position:absolute;
+        margin-top: 150px;
+        margin-left: 185px;
+        width: 220px;
+    }
+
+    hr:visited
+    {
+    color: #DEEBFF; 
+    }
+
+    hr:hover
+    {
+    background-color: #DEEBFF; 
+    }
+
+    .infos /*ne pas mettre les codes sur button mais */
+    {
+
+    
+    width: 40px;
+    height: 35px;
+    
+
     }
 
     .texteinfo
@@ -1114,11 +1247,44 @@ color: black;
         font-size: 1.3em;
         position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
         bottom : 20px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+        
     }
 
     .soustexte
     {
         font-size: 1.3em;
+    }
+
+    /*bouton rechercher une icone remplace le texte rechercher*/
+
+    .rechercher/*le bouton recherhcer ne doit plus apparaitre car remplacer par icone search*/
+    {
+        display: none;
+    }
+
+
+    .loupe
+    {
+        display: flex;/*pour faire réapparaitre l'icone */
+        border: 1px solid #F2F2F2;/*creer une border autour de l icone map*/
+        border-radius: 20px 20px 20px 20px;
+        height: 52px;
+        width: 60px;/*regler la longueur en fonction du texte du bouton */
+        background-color: #0065FC;
+        font-size: 1.1em;
+        padding-top: 15px;
+        padding-left: 18px;
+        position: relative;
+        bottom: 2px;
+        color:#FFFFFF;
+        
+    }
+
+    #ville
+    {
+        display:flex;
+        width: 300px;/*regler la longueur en fonction du texte du bouton */
+        border-radius: 0px 20px 20px 0px;
     }
 
 
@@ -1292,7 +1458,7 @@ color: black;
     aside/*partie les plus populaires*/
     {
     
-    width: 400px;
+    width: 420px;
     height: 800px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1446,26 +1612,28 @@ color: black;
     {
         flex-direction: column;
         margin-top: 250px;
+        width: 420px;/*pour aligner avec le block aside*/
+        margin-left: 25px;
     }
 
     #propos
     {
     width: 350px;
-    margin-left: 50px;/*pour aligner le texte avec les autres sections*/
+    margin-left: 25px;/*pour aligner le texte avec les autres sections*/
     line-height: 1.5em;/*pour mettre un peu d'espace entre les lignes*/
     }
 
     #noshebergements
     {
     width: 350px;
-    margin-left: 50px;
+    margin-left: 25px;
     line-height: 1.5em;
     }
 
     #assistance
     {
     width: 350px;
-    margin-left: 50px;
+    margin-left: 25px;
     line-height: 1.5em;
     }
 
