@@ -202,8 +202,8 @@ h4
     color:#0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
-    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
-    bottom:2px; /* reglage du decalage de la bulle*/    
+    /*position: relative; permet de regler un decalage de la bulle dans le bouton, PLUS UTILE SUITE ADAPTATION FIREFOX*/
+    /*bottom:1px; /* reglage du decalage de la bulle*/    
 }
             
 .b-eco /*bouton texte*/
@@ -227,7 +227,7 @@ h4
 
 #boutoneco/*bouton qui va englober le bouton icone + le bouton texte*/
 {
-
+display: flex; /* pour aligner avec firefox*/
 border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
 border-radius: 30px;
 height: 40px;
@@ -248,8 +248,8 @@ margin-left: 20px;/*pour decoller les boutons les uns des autres */
     color:#0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
-    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
-    bottom:2px; /* reglage du decalage de la bulle*/    
+    /*position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    /*bottom:2px; /* reglage du decalage de la bulle*/    
 }
             
 .b-fami /*bouton texte*/
@@ -273,7 +273,7 @@ margin-left: 20px;/*pour decoller les boutons les uns des autres */
 
 #boutonfami/*bouton qui va englober le bouton icone + le bouton texte*/
 {
-
+display: flex;
 border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
 border-radius: 30px;
 height: 40px;
@@ -293,8 +293,8 @@ margin-left: 20px;
     color:#0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
-    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
-    bottom:2px; /* reglage du decalage de la bulle*/    
+    /*position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    /*bottom:2px; /* reglage du decalage de la bulle*/    
 }
             
 .b-roman /*bouton texte*/
@@ -318,7 +318,7 @@ margin-left: 20px;
 
 #boutonroman/*bouton qui va englober le bouton icone + le bouton texte*/
 {
-
+display: flex;
 border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
 border-radius: 30px;
 height: 40px;
@@ -338,8 +338,8 @@ margin-left: 20px;
     color:#0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
-    position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
-    bottom:2px; /* reglage du decalage de la bulle*/    
+    /*position: relative;/* permet de regler un decalage de la bulle dans le bouton*/
+    /*bottom:2px; /* reglage du decalage de la bulle*/    
 }
             
 .b-ani /*bouton texte*/
@@ -363,7 +363,7 @@ margin-left: 20px;
 
 #boutonani/*bouton qui va englober le bouton icone + le bouton texte*/
 {
-
+display: flex;
 border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
 border-radius: 30px;
 height: 40px;
@@ -1642,7 +1642,7 @@ header
 
 
 
-@media all and (min-width: 720px) and (max-width: 1024px)
+@media all and (min-width: 720px) and (max-width: 1450px)
 /*Breakpoint pour les tablettes 1024px*/
 
 {
@@ -1706,30 +1706,32 @@ header
     
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     
 
     }
 
     #hebergement1et2
     {
-        flex-direction: row;
-        align-items: baseline;
+        /*flex-direction: row;*/
+        /*align-items: baseline;*/
+        
 
     }
 
     #hebergement3et4
     {
-        flex-direction: row;
+        /*flex-direction: row;*/
     }
 
     #hebergement5et6
     {
-        flex-direction: row;
+        /*flex-direction: row;*/
     }
 
     #carte2, #carte8, #carte6
     {
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
 
 
@@ -1738,11 +1740,13 @@ header
     {
         margin-top: 25px;/*pour espacer les blocks hébergements et aside*/
         width: 100%;
-        height: 1000px;/*pour redimensionner la hauteur du block hebergement*/
+        height: auto;/*pour redimensionner la hauteur du block hebergement*/
         background-color: #FFFFFF;
-        
+        /*min-height: 100vh;*/
         padding-left: 1px;
         padding-right: 1px;
+        /*min-height: 600px;*/
+        /*max-height: 1800px;/*a voir*/
         
     }
 
@@ -1847,7 +1851,8 @@ header
     #afficherplus
     {
     
-    margin-top: 920px;
+    margin: auto;
+    padding-left: 350px;
     
     }
 
@@ -1861,11 +1866,12 @@ header
     aside/*partie les plus populaires*/
     {
     
-    width: 100%;/*pour sur la largeur max*/
-    height: 800px;
+    width: auto;/*pour sur la largeur max*/
+    height: auto;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 0px 0px 0px 0px;/*les coin ne sont plus arrondis !*/
+
     
     }
 
@@ -1898,7 +1904,6 @@ header
 
     }
 
-    
 
 
     /*section activités à marseille*/
@@ -1908,42 +1913,34 @@ header
         
         
         flex-wrap: wrap;
-        height: 700px;
+        height: auto;
         margin-left: 25px;
+
+
 
     }
 
     #activites
     {
         margin-left: 25px;
+        margin-top: 50px;
+        
     }
     
 
-    /*#legende_parc*/
-    {
-    width: 370px;
-    height: 30px;
-    }*/
-
-    #carte4/*pour remonter la carte des calamques*/
-    {
-        position:relative;
-        bottom: 130px;
-
-    }
+    
+    
 
     #carte2et3
     {
-        /*position:relative;*/
-        /*bottom: 20px;*/
+        
         margin-right: 80px;
 
     }
 
     #carte5et6
     {
-        /*position:relative;*/
-        /*bottom: 80px;*/
+        
         margin-right: 80px;
     }
 
@@ -1951,7 +1948,7 @@ header
 
     footer
     {
-        /*flex-direction: column;*/
+        
         flex-wrap: wrap;
         margin-top: 250px;
         width: 100%;/*pour aligner avec le block aside*/
