@@ -1642,16 +1642,18 @@ header
 
 
 
-@media screen and (min-width: 720px) and (max-width: 1024px)
+@media all and (min-width: 720px) and (max-width: 1024px)
 /*Breakpoint pour les tablettes 1024px*/
 
 {
 
     header /*juste pour moi visualiser*/
     {
-    
+        
         background-color: red;
     }
+
+
 
     .heber1
     {
@@ -1703,8 +1705,8 @@ header
     {
     
     display: flex;
-
     flex-wrap: wrap;
+    
 
     }
 
@@ -1845,7 +1847,7 @@ header
     #afficherplus
     {
     
-    margin-top: 1870px;
+    margin-top: 920px;
     
     }
 
@@ -1901,11 +1903,12 @@ header
 
     /*section activités à marseille*/
 
-    #actimarseille
+    #actimarseille/*block qui englobe toutes les cartes*/
     {
         
-        flex-direction: column;
-        height: 1250px;
+        
+        flex-wrap: wrap;
+        height: 700px;
         margin-left: 25px;
 
     }
@@ -1914,90 +1917,13 @@ header
     {
         margin-left: 25px;
     }
-
-    /*il faut redimentionner toutes les cartes et réajuster les alignements*/
-    .vieuxport
-    {
     
-    height: 200px;
-    width: 380px;
 
-    
-    }
-
-    #legende_vieuxport
-    {
-    
-    width: 370px;
-    height: 30px;
-    
-    }
-
-    .pomegues
-    {
-    height: 200px;
-    width: 380px;
-    }
-
-    #legende_pomegues
+    /*#legende_parc*/
     {
     width: 370px;
     height: 30px;
-    }
-
-    .frioul
-    {
-    height: 200px;
-    width: 380px;
-
-    }
-
-    #legende_frioul
-    {
-    width: 370px;
-    height: 30px;
-
-    }
-
-
-
-    .calamques
-    {
-    height: 200px;
-    width: 380px;
-    }
-
-    #legende_calamques
-    {
-    width: 370px;
-    height: 30px;
-
-    }
-
-
-    .notredame
-    {
-    height: 200px;
-    width: 380px;
-    }
-
-    #legende_notredame
-    {
-    width: 370px;
-    height: 30px;
-    }
-
-    .parc
-    {
-    height: 200px;
-    width: 380px;
-    }
-
-    #legende_parc
-    {
-    width: 370px;
-    height: 30px;
-    }
+    }*/
 
     #carte4/*pour remonter la carte des calamques*/
     {
@@ -2008,24 +1934,27 @@ header
 
     #carte2et3
     {
-        position:relative;
-        bottom: 40px;
+        /*position:relative;*/
+        /*bottom: 20px;*/
+        margin-right: 80px;
 
     }
 
     #carte5et6
     {
-        position:relative;
-        bottom: 170px;
+        /*position:relative;*/
+        /*bottom: 80px;*/
+        margin-right: 80px;
     }
 
 
 
     footer
     {
-        flex-direction: column;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
         margin-top: 250px;
-        width: 420px;/*pour aligner avec le block aside*/
+        width: 100%;/*pour aligner avec le block aside*/
         margin-left: 25px;
     }
 
