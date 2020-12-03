@@ -12,16 +12,25 @@
 
 body{
     font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
-   
+    margin:0;
+    
 
 }
 
-
+header, section{
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
 /*1ere partie entête du site*/
 
 a{
     color: #0065FC;
+}
+
+a:visited{
+    color:#000000;
+    
 }
 
 #nav
@@ -92,21 +101,15 @@ a{
         flex-direction: row;
         justify-content: flex-end;
         position: relative;
-        bottom:16px;
+        bottom:6px;
         
     }
 
 
-hr:visited
+#ligneheber a:visited
     {
     background-color: #DEEBFF; 
     }
-
-hr:hover
-    {
-    background-color: #DEEBFF; 
-    }
-
 
 
 /*2eme partie boutons de recherche ville + filtres*/
@@ -136,8 +139,6 @@ height: 50px;
 width: 50px;/*regler la longueur en fonction du texte du bouton */
 background-color: #DEEBFF;
 font-size: 1em;
-
-
 
 }
 
@@ -495,7 +496,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -522,7 +523,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -547,7 +548,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -573,7 +574,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -598,7 +599,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -623,7 +624,7 @@ text-decoration: none;
 {
     position: absolute;
     height: 120px;
-    width: 20.5%;
+    width: 19.6%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
@@ -1069,6 +1070,7 @@ footer
     width: 100%;
     height: auto;
     margin-top:-100px;
+
 }
 
 ol
@@ -1130,14 +1132,32 @@ color: black;
 
 {
 
+header, section{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#leslieux, #actimarseille, #activites, h2, h4, #rechercherville, .soustexte, #ligneinfos{
+    
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+#ligneinfos{
+    font-size: 0.9em;
+}
+
+.soustexte p{
+    font-size:0.9em;
+}
 
 header
     {
        
         display: flex;
         flex-direction: column;
-       
-    
+          
     }
 
     .logo1
@@ -1146,12 +1166,7 @@ header
         margin-top: 20px;
     }
 
-    /*.inscri1*/
-    {
-        position:relative;
-        bottom:50px;
-        margin-right: 170px;
-    }
+
 
 .inscri1{
     display: none;
@@ -1197,60 +1212,78 @@ header
         display: none;
     }
 
-    
+.ligne1 {
 
-    .ligneheber2, .ligneacti2
+width:100%;
+height: 4px;
+background-color: #0065FC;
+cursor: pointer;
+
+}
+
+.ligne2 {
+
+width:100%;
+height: 4px;
+background-color: #DEEBFF;
+cursor: pointer;
+
+}
+
+
+#barre2{
+    display:flex;
+    flex-direction: row;
+    
+    height: auto;
+    width: auto;
+    margin-top:35px;
+
+}
+
+    /*.ligneheber2, .ligneacti2*/
     {
         display: flex;
         height: 5px;
-        background-color: #0065FC;
+        
         margin-left: 0;
         border:none;
     }
 
-    .ligneheber2
+    /*.ligneheber2*/
     {
         position:relative;
         margin-top: 30px;
-        width: 200px;
-        
+        width: auto;
+        background-color: #0065FC;
     }
 
 
-    .ligneacti2
+    /*.ligneacti2*/
     {
         position:relative;
         bottom: 21px;
         margin-left: 200px;
         width: auto;/*240px*/
+        background-color: #DEEBFF;
     }
 
-.ligneacti2 a:visited/* a redefinir car ne fonctionne pas !!!*/
+/*.ligneacti2 a:visited/* a redefinir car ne fonctionne pas !!!*/
     {
     background-color: #DEEBFF; 
     }
 
-
-    section{
-        margin-left: 20px;
-    }
-
     .infos
-    {
-
-    
+    {   
     width: 40px;
     height: 35px;
-    
-
     }
 
     .texteinfo
     {
         font-size: 1.3em;
         position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-        bottom : 20px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-        
+        bottom : 20px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/       
     }
 
     .soustexte
@@ -1264,7 +1297,6 @@ header
     {
         display: none;
     }
-
 
     .loupe
     {
@@ -1295,8 +1327,6 @@ header
     transform: scale(1.15);/*pour faire aggrandir valeur finale*/
     }
         
-    
-
     #ville
     {
         display:flex;
@@ -1304,14 +1334,12 @@ header
         border-radius: 0px 20px 20px 0px;
     }
 
-
     /*section rechercher ville + boutons filtres*/
 
     #filtres
     {
         flex-direction: column;
-        
-        
+                
     }
 
     #boutonfami, #boutonroman, #boutonani
@@ -1334,7 +1362,7 @@ header
 
     #ligneinfos
     {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
 
@@ -1371,7 +1399,7 @@ header
 }
 
 
-    #hebergementmarseille
+#hebergementmarseille
 {
     
     background-color: #FFFFFF;
@@ -1387,87 +1415,87 @@ header
 .cannebiere/*redimentionner les photos*/
 {
     
-    width: 90%;
-    height: 160px;
+    width: 88%;
+    height: 140px;
     
 }
 
 #legende_cannebiere/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
 
 .hotelduport
 {
-    width: 90%;
-    height: 160px;
+    width: 88%;
+    height: 140px;
 }
 
 #legende_hotelduport/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
 .mouettes
 {
-    width: 90%;
-    height: 160px;
+    width: 88%;
+    height: 140px;
 }
 
 #legende_mouettes/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
 
 
 .hotelmer
 {
-    width: 90%;
-    height: 160px;
+    width: 88%;
+    height: 140px;
 
 }
 
 #legende_hotelmer/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
 
 .panier
 {
-    width: 90%;
-    height: 160px;
+    width: 88%;
+    height: 140px;
 }
 
 #legende_panier/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
 
 .amina
 {
-   width: 90%;
-   height: 160px;
+   width: 88%;
+   height: 140px;
 }
 
 #legende_amina/*etiquette blanche*/
 {
     
-    height: 105px;
-    padding-top: 160px;
+    height: 95px;
+    padding-top: 140px;
     
 }
     #legende_cannebiere, #legende_hotelmer, #legende_hotelduport, #legende_panier, #legende_mouettes, #legende_amina
@@ -1484,14 +1512,10 @@ header
     height: auto;
     border-radius: 0px;
     margin-bottom: 25px;
-
+    margin-left:0;
+    padding-left: 0;
+    
 }
-
-section #lespluspopu
-{
-    margin-left: -20px;
-}
-
 
 
 #titrepopu
@@ -1511,21 +1535,22 @@ section #lespluspopu
     margin-left: 0;/* permet de regler l'ecart entre le titre et l icone*/
 }
 
+#populaires{
+    margin-left: 15px;
+}
 
+/*section activités à marseille*/
 
-
-    /*section activités à marseille*/
-
-    #actimarseille
+#actimarseille
     {
         
         flex-direction: column;
         /*justify-content: flex-start;*/
-        max-height: 1930px;
+        max-height: 1850px;
      
     }
 
-    #carte5et6{
+#carte5et6{
     margin-left: 0;
     width: 100%
 
@@ -1562,7 +1587,7 @@ section #lespluspopu
 .vieuxport
 {
     
-    height: 265px;
+    height: 245px;
     
 }
 
@@ -1570,7 +1595,7 @@ section #lespluspopu
 .pomegues
 {
     
-    height: 265px;
+    height: 245px;
     position: relative;
     bottom:70px;
     
@@ -1586,7 +1611,7 @@ section #lespluspopu
 .frioul
 {
     
-    height: 265px;
+    height: 245px;
     position: relative;
     bottom:60px;
     
@@ -1602,7 +1627,7 @@ section #lespluspopu
 
 .calamques
 {
-    height: 265px;
+    height: 245px;
     position: relative;
     bottom:210px;
     
@@ -1617,7 +1642,7 @@ section #lespluspopu
 
 .notredame
 {
-    height: 265px;
+    height: 245px;
     position: relative;
     bottom:280px;
     
@@ -1632,7 +1657,7 @@ section #lespluspopu
 
 .parc
 {
-    height: 265px;
+    height: 245px;
     position: relative;
     bottom:270px;
     
@@ -1651,18 +1676,17 @@ section #lespluspopu
     {
         flex-direction: column;
         
-        margin-top: 0;
-        width: 100%;/*pour aligner avec le block aside*/ 
-        
-       
     }
 
-    
+    #propos{
+        width: 70%;
+    }
 
     #noshebergements
     {
     
     margin-left: 25px;
+    width: 50%;
     
     }
 
@@ -1672,6 +1696,10 @@ section #lespluspopu
     margin-left: 25px;
     
     }
+
+footer h4{
+    margin-left: 0;
+}
 
 
 }
@@ -1700,7 +1728,7 @@ section #lespluspopu
     background-color: #F2F2F2;
     width: 100%;
     height: auto;/*pour la hauteur du block hebergement faire pareil pour aside*/
-    padding-left: 0;
+    padding-left: 25px;
     border-radius: 20px;
     padding-right: 0;
 
@@ -1710,7 +1738,7 @@ section #lespluspopu
 .cannebiere/*redimentionner les photos*/
 {
     
-    width: 30.3%;
+    width: 29.3%;
     height: 160px;
     
 }
@@ -1725,7 +1753,7 @@ section #lespluspopu
 
 .hotelduport
 {
-    width: 30.3%;
+    width: 29.3%;
     height: 160px;
 }
 
@@ -1738,7 +1766,7 @@ section #lespluspopu
 }
 .mouettes
 {
-    width: 30.3%;
+    width: 29.3%;
     height: 160px;
 }
 
@@ -1753,7 +1781,7 @@ section #lespluspopu
 
 .hotelmer
 {
-    width: 30.3%;
+    width: 29.3%;
     height: 160px;
 
 }
@@ -1768,7 +1796,7 @@ section #lespluspopu
 
 .panier
 {
-    width: 30.3%;
+    width: 29.3%;
     height: 160px;
 }
 
@@ -1782,7 +1810,7 @@ section #lespluspopu
 
 .amina
 {
-   width: 30.3%;
+   width: 29.3%;
    height: 160px;
 }
 
@@ -1807,7 +1835,7 @@ section #lespluspopu
     /*height: auto;*/
     /*border-radius: 20px;*/
     margin-left:0;
-    padding-left: 0;
+    padding-left: 25px;
 
 }
 
@@ -2002,7 +2030,7 @@ text-decoration: none;
 
 
 
-@media all and (min-width: 859px)and (max-width: 1177px)
+@media all and (min-width: 908px)and (max-width: 1177px)
 /*Breakpoint 2 pour les tablettes*/
 
 
@@ -2033,10 +2061,96 @@ width: 45%;
     margin-right: 105px;
 }
 
+.cannebiere/*redimentionner les photos*/
+{
+    
+    width: 28.5%;
+    height: 160px;
+    
+}
+
+#legende_cannebiere/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+
+.hotelduport
+{
+    width: 28.5%;
+    height: 160px;
+}
+
+#legende_hotelduport/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+.mouettes
+{
+    width: 28.5%;
+    height: 160px;
+}
+
+#legende_mouettes/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+
+
+.hotelmer
+{
+    width: 28.5%;
+    height: 160px;
 
 }
 
-@media all and (min-width: 681px)and (max-width: 858px)
+#legende_hotelmer/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+
+.panier
+{
+    width: 28.5%;
+    height: 160px;
+}
+
+#legende_panier/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+
+.amina
+{
+   width: 28.5%;
+   height: 160px;
+}
+
+#legende_amina/*etiquette blanche*/
+{
+    
+    height: 105px;
+    padding-top: 160px;
+    
+}
+
+}
+
+@media all and (min-width: 681px)and (max-width: 907px)
 /*Breakpoint 3 pour les tablettes*/
 
 
@@ -2045,8 +2159,6 @@ width: 45%;
  #populaires{
     flex-direction: column;
 
-     
-    
 }   
 
 .graph
@@ -2069,7 +2181,7 @@ width: 75%;
 .cannebiere/*redimentionner les photos*/
 {
     
-    width: 28.3%;
+    width: 27.5%;
     height: 160px;
     
 }
@@ -2084,7 +2196,7 @@ width: 75%;
 
 .hotelduport
 {
-    width: 28.3%;
+    width: 27.5%;
     height: 160px;
 }
 
@@ -2097,7 +2209,7 @@ width: 75%;
 }
 .mouettes
 {
-    width: 28.3%;
+    width: 27.5%;
     height: 160px;
 }
 
@@ -2112,7 +2224,7 @@ width: 75%;
 
 .hotelmer
 {
-    width: 28.3%;
+    width: 27.5%;
     height: 160px;
 
 }
@@ -2127,7 +2239,7 @@ width: 75%;
 
 .panier
 {
-    width: 28.3%;
+    width: 27.5%;
     height: 160px;
 }
 
@@ -2141,7 +2253,7 @@ width: 75%;
 
 .amina
 {
-   width: 28.3%;
+   width: 27.5%;
    height: 160px;
 }
 
