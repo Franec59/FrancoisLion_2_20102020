@@ -1,26 +1,23 @@
-/*page css de indexb correction réservia*/
+/*page css projet réservia*/
 
-@font-face 
-{
+@font-face {
     font-family: 'ralewayregular';
     src: url('raleway-regular-webfont.woff2') format('woff2'),
          url('raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body{
     font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;
     margin:0;
-    
-
 }
 
 header, section{
     margin-left: 25px;
     margin-right: 25px;
 }
+
 
 /*1ere partie entête du site*/
 
@@ -29,100 +26,64 @@ a{
 }
 
 a:visited{
-    color:#000000;
-    
+    color:#000000;   
 }
 
-#nav
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 40px;
-    margin-right: 100px;
-    margin-top: 30px;
-    font-size: 1em;
-    
-}
-
-
-
-.logo1
-{
+.logo1{
     width: 100px;
     height: 100%; /*mettre en % la l ou la H pour conserver la proportion*/
-    margin-top: 40px;
+    margin-top: 30px;
     float: left;
 }
 
-.heber1, .acti1
-{
-    padding-right: 90px;
+#barreh{
+    border-top: 4px solid #0065FC;
+    width: 140px;
 }
 
-.inscri1{
+#barrea, #inscrit{
+    border-top: 4px solid #FFFFFF;
+    width: 140px;
+}
+
+#inscrit{
     font-weight: bold;
 }
 
-.heber1 a, .acti1 a, .inscri1 a
-{
+#nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu1{
+    display: flex;
+}
+
+#menu1 a{
     text-decoration: none;
+    display: block;/*pour que le lien prenne toute la largeur */
+    text-align: center;
+    line-height: 100px;
 }
 
-.inscri2{
-    display:none;
+#menu2 a{
+    text-decoration: none;
+    display: block;/*pour que le lien prenne toute la largeur */
+    text-align: center;
+    line-height: 100px;
 }
-
-/*ligne au dessus du lien hébergement*/
-
-.ligneheber
-    {
-        
-        height: 3px;
-        background-color: #0065FC;
-        border:none;
-        width: 150px;
-        
-        
-    }
-
-.ligneacti
-    {     
-        height: 3px;
-        background-color: #FFFFFF;
-        border:none;
-        width: 150px;
-        margin-right: 240px;
-        
-    }
-
-    #barre{
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        position: relative;
-        bottom:8px;
-        
-    }
-
-
-#ligneheber a:visited
-    {
-    background-color: #DEEBFF; 
-    }
 
 
 /*2eme partie boutons de recherche ville + filtres*/
 
 section{
-
     margin-top: 35px;
 }
 
+
 /*titre + texte*/
-h2
-{
-    
+
+h2{
     color:black;
     font-weight: bold;
     font-size: 1.7em;
@@ -131,382 +92,302 @@ h2
 
 /*bouton rechercher la ville en 3 parties*/
 
-.map
-{
-border: 1px solid #DEEBFF;/*creer une border autour de l icone map*/
-border-radius: 10px 0px 0px 10px;
-height: 50px;
-width: 50px;/*regler la longueur en fonction du texte du bouton */
-background-color: #DEEBFF;
-font-size: 1em;
-
+.map{
+    border: 1px solid #DEEBFF;/*creer une border autour de l icone map*/
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    width: 50px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #DEEBFF;
+    font-size: 1em;
 }
 
-
-#ville
-{
-border: 1px solid #DEEBFF; /*creer une border autour de l icone map*/
-height: 48px;
-width: 250px;/*regler la longueur en fonction du texte du bouton */
-
-
+#ville{
+    border: 1px solid #DEEBFF; /*creer une border autour de l icone map*/
+    height: 48px;
+    width: 250px;/*regler la longueur en fonction du texte du bouton */
 }
 
-.rechercher
-{
-border: 1px solid #0065FC;
-border-radius: 0px 10px 10px 0px;
-height: 50px;
-width: 150px;/*regler la longueur en fonction du texte du bouton */
-background-color: #0065FC;
-font-size: 1em;
-font-weight: bold;
-color: #FFFFFF;
-
-transform: scale(1);/*valeur initiale */
-transition: transform 400ms;/*timing de la transformation*/
-
+.rechercher{
+    border: 1px solid #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    width: 150px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #0065FC;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    transform: scale(1);/*valeur initiale */
+    transition: transform 400ms;/*timing de la transformation*/
 }
 
-
-.rechercher:hover
-{
-  /*background-color: #DEEBFF; pour changer d'effet avec le fond au cas ou ?*/
-  /*color:#0065FC;*/
-  /*border: 1px solid #DEEBFF;*/
+.rechercher:hover{
   border-radius: 10px 10px 10px 10px;
   cursor: pointer;
   transform: scale(1.15);/*pour faire aggrandir valeur finale*/
 }
 
-
-.search
-{
-border: none;
-margin-top:2px;
-margin-left: 10px;
-height: 45px;
-width: 237px;
-background-color: #FFFFFF;
-font-size: 1em;
-font-weight: bold;
-
-
+.search{
+    border: none;
+    margin-top:2px;
+    margin-left: 10px;
+    height: 45px;
+    width: 237px;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-.search:focus
-{
-    outline:#FFFFFF 1px;
-    
+.search:focus{
+    outline:#FFFFFF 1px;  
 }
 
-
-#rechercherville
-{
+#rechercherville{
   display: flex;
   margin-top: 25px;
 }
 
-
-
-.loupe/*pour mq mobile, ne doit pas apparaitre ici !*/
-{
+.loupe/*pour mq mobile, ne doit pas apparaitre ici !*/{
     display:none;
 }
 
-
 /*boutons de filtres clicables avec icone dans une bulle + titre du bouton*/
 
-#filtres
-{
+#filtres{
     display: flex;
     margin-top: 25px;
 }
 
-h4
-{
+h4{
     font-size: 1.1em;
     font-weight: bold;
     color:black;
-
 }
 
-.titrefiltres
-{
+.titrefiltres{
     position: relative;/*permet de regler le decalage verticale en alignant le titre avec les boutons*/
     bottom: 12px;
 }
 
 
 /*bouton economique*/
-.eco /*l'icone doit être un bouton en html pour être centré*/
-{
+
+.eco /*l'icone doit être un bouton en html pour être centré*/{
     border: 2px solid #DEEBFF;
     border-radius: 50px;
     width: 40px;
     height: 40px;
     color:#0065FC;
     background-color: #DEEBFF;
-    
 }
 
-#boutoneco/*bouton qui va englober le bouton icone + le texte*/
-{
-display: flex; /* pour aligner avec firefox*/
-border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
-border-radius: 30px;
-height: 40px;
-width: 167px;/*regler la longueur en fonction du texte du bouton */
-background-color: #FFFFFF;
-margin-left: 20px;/*pour decoller les boutons les uns des autres */
-font-size: 1em;
-font-weight: bold;
-
-
-}
-
-.texteeco/*pour centrer la partie texte*/
-{
-position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
-bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-
-}
-
-#boutoneco:hover /*changement d'apparence au survol*/
-{
-      background-color: #0065FC;
-      color:#FFFFFF;
-      border: #0065FC;
-      cursor: pointer;
-      border: 2px solid #FFFFFF;
-      
-}
-
-/*bouton famillial*/
-.fami /*l'icone doit être un bouton en html pour être centré*/
-{
-    border: 2px solid #DEEBFF;
-    border-radius: 50px;
-    width: 40px;
+#boutoneco/*bouton qui va englober le bouton icone + le texte*/{
+    display: flex; /* pour aligner avec firefox*/
+    border: 2px solid #F2F2F2;/*creer une border qui va englober le bouton icon + le bouton texte*/
+    border-radius: 30px;
     height: 40px;
-    color:#0065FC;
-    background-color: #DEEBFF;
-        
+    width: 166px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #FFFFFF;
+    margin-left: 20px;/*pour decoller les boutons les uns des autres */
+    font-size: 1em;
+    font-weight: bold;
 }
 
-#boutonfami/*bouton qui va englober le bouton icone + le texte*/
-{
-display: flex; /* pour aligner avec firefox*/
-border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
-border-radius: 30px;
-height: 40px;
-width: 130px;/*regler la longueur en fonction du texte du bouton */
-background-color: #FFFFFF;
-margin-left: 20px;/*pour decoller les boutons les uns des autres */
-font-size: 1em;
-font-weight: bold;
-
-
+.texteeco/*pour centrer la partie texte*/{
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+    bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
 }
 
-.textefami/*pour centrer la partie texte*/
-{
-position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
-bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-
-}
-
-#boutonfami:hover /*changement d'apparence au survol*/
-{
-      background-color: #0065FC;
-      color:#FFFFFF;
-      border: #0065FC;
-      cursor: pointer;
-      border: 2px solid #FFFFFF;
-      
-}
-
-/*bouton Romantique*/
-.roman /*l'icone doit être un bouton en html pour être centré*/
-{
-    border: 2px solid #DEEBFF;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    color:#0065FC;
-    background-color: #DEEBFF;
-        
-}
-
-#boutonroman/*bouton qui va englober le bouton icone + le texte*/
-{
-display: flex; /* pour aligner avec firefox*/
-border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
-border-radius: 30px;
-height: 40px;
-width: 150px;/*regler la longueur en fonction du texte du bouton */
-background-color: #FFFFFF;
-margin-left: 20px;/*pour decoller les boutons les uns des autres */
-font-size: 1em;
-font-weight: bold;
-
-
-}
-
-.texteroman/*pour centrer la partie texte*/
-{
-position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
-bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-
-}
-
-#boutonroman:hover /*changement d'apparence au survol*/
-{
-      background-color: #0065FC;
-      color:#FFFFFF;
-      border: #0065FC;
-      cursor: pointer;
-      border: 2px solid #FFFFFF;
-      
-}
-
-/*bouton animaux*/
-.ani /*l'icone doit être un bouton en html pour être centré*/
-{
-    border: 2px solid #DEEBFF;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    color:#0065FC;
-    background-color: #DEEBFF;
-    
-    
-}
-
-#boutonani/*bouton qui va englober le bouton icone + le texte*/
-{
-display: flex; /* pour aligner avec firefox*/
-border: 2px solid #DEEBFF;/*creer une border qui va englober le bouton icon + le bouton texte*/
-border-radius: 30px;
-height: 40px;
-width: 200px;/*regler la longueur en fonction du texte du bouton */
-background-color: #FFFFFF;
-margin-left: 20px;/*pour decoller les boutons les uns des autres */
-font-size: 1em;
-font-weight: bold;
-
-}
-
-.texteani/*pour centrer la partie texte*/
-{
-position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
-bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-
-}
-
-#boutonani:hover /*changement d'apparence au survol*/
-{
+#boutoneco:hover /*changement d'apparence au survol*/{
     background-color: #0065FC;
     color:#FFFFFF;
     border: #0065FC;
     cursor: pointer;
-    border: 2px solid #FFFFFF;
-      
+    border: 2px solid #FFFFFF;    
 }
 
-#mqecofa/*block rajouter pour mqmobile, les garde alignés*/
-{
+
+/*bouton famillial*/
+
+.fami /*l'icone doit être un bouton en html pour être centré*/{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+        
+}
+
+#boutonfami/*bouton qui va englober le bouton icone + le texte*/{
+    display: flex; /* pour aligner avec firefox*/
+    border: 2px solid #F2F2F2;/*creer une border qui va englober le bouton icon + le bouton texte*/
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #FFFFFF;
+    margin-left: 20px;/*pour decoller les boutons les uns des autres */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.textefami/*pour centrer la partie texte*/{
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+    bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+}
+
+#boutonfami:hover /*changement d'apparence au survol*/{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      border: #0065FC;
+      cursor: pointer;
+      border: 2px solid #FFFFFF;    
+}
+
+
+/*bouton Romantique*/
+
+.roman /*l'icone doit être un bouton en html pour être centré*/{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;   
+}
+
+#boutonroman/*bouton qui va englober le bouton icone + le texte*/{
+    display: flex; /* pour aligner avec firefox*/
+    border: 2px solid #F2F2F2;/*creer une border qui va englober le bouton icon + le bouton texte*/
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #FFFFFF;
+    margin-left: 20px;/*pour decoller les boutons les uns des autres */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.texteroman/*pour centrer la partie texte*/{
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+    bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+}
+
+#boutonroman:hover /*changement d'apparence au survol*/{
+      background-color: #0065FC;
+      color:#FFFFFF;
+      border: #0065FC;
+      cursor: pointer;
+      border: 2px solid #FFFFFF;   
+}
+
+
+/*bouton animaux*/
+
+.ani /*l'icone doit être un bouton en html pour être centré*/{
+    border: 2px solid #DEEBFF;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    color:#0065FC;
+    background-color: #DEEBFF;
+}
+
+#boutonani/*bouton qui va englober le bouton icone + le texte*/{
+    display: flex; /* pour aligner avec firefox*/
+    border: 2px solid #F2F2F2;/*creer une border qui va englober le bouton icon + le bouton texte*/
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #FFFFFF;
+    margin-left: 20px;/*pour decoller les boutons les uns des autres */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.texteani/*pour centrer la partie texte*/{
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+    bottom: 5px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
+}
+
+#boutonani:hover /*changement d'apparence au survol*/{
+    background-color: #0065FC;
+    color:#FFFFFF;
+    border: #0065FC;
+    cursor: pointer;
+    border: 2px solid #FFFFFF; 
+}
+
+#mqecofa/*block rajouter pour mqmobile, les garde alignés*/{
     display: flex;
 }
 
 
 /*ligne infos : icone dans une bulle + texte*/
 
-
-#ligneinfos/*block qui englobe le bouton et le texte*/
-{
-    display: flex;/*pour aligner les block*/
-    
+#ligneinfos/*block qui englobe le bouton et le texte*/{
+    display: flex;/*pour aligner les block*/    
 }
 
-.texteinfo/*englobe la partie texte*/
-{
-position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
-bottom : 10px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
-/*font-family: 'ralewayregular' ,"Arial Black", Arial, Verdana, sans-serif;*/
-
+.texteinfo/*englobe la partie texte*/{
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    margin-left: 5px;/* permet de regler l'ecart entre la bulle et le texte*/
+    bottom : 10px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/
 }
 
-.infos /*ne pas mettre les codes sur button mais */
-{
-
+.infos /*ne pas mettre les codes sur button mais */{
     border: 1px solid #DEEBFF;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     color:#0065FC;
     background-color: #FFFFFF;
-
 }
 
 
 /*2ème section Hébergement à Marseille*/
 
-#hebergement/*block qui englobe herbergement à Marseille et les plus populaires*/
-{
+#hebergement/*block qui englobe herbergement à Marseille et les plus populaires*/{
     display: flex;
     flex-direction: row;
-    
-
 }
+
 
 /*partie avec les 6 cartes hébergements */
 
-#hebergementmarseille
-{
-    
+#hebergementmarseille{
     background-color: #F2F2F2;
     width: 74%;
     height: auto;/*pour la hauteur du block hebergement faire pareil pour aside*/
     padding-left: 25px;
     border-radius: 20px;
     padding-right: 25px;
-
 }
 
-
-#leslieux
-{
-
+#leslieux{
     display: flex;
     flex-direction: row;
 }
 
-#leslieux a 
-{
+#leslieux a {
 text-decoration: none;
 }
 
-.cannebiere/*photo*/
-{
+.leslieux__img/*photo*/{
     position: absolute;
     height: 120px;
-    width: 19.8%;
+    width: 19.5%;
     border-radius: 19px 19px 0px 0px;
     margin-left: 5px;
     margin-top: 5px;
     margin-right: 5px;
-    
+    object-fit: cover;   
 }
 
-#legende_cannebiere/*etiquette blanche*/
-{
-    
+.leslieux__legende/*etiquette blanche*/{ 
     border-radius: 20px 20px 20px 20px;
     width: auto;
     height: 95px;
@@ -516,143 +397,14 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;
-    
 }
 
-.hotelduport
-{
-    position: absolute;
-    height: 120px;
-    width: 19.8%;
-    border-radius: 19px 19px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-#legende_hotelduport
-{
-    border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: 95px;
-    padding-top: 120px;
-    padding-left: 10px;
-    line-height: 1.5em;
-    background-color: #FFFFFF;
-    color: black;
-    margin-bottom: 25px;
-    
-}
-
-.mouettes
-{
-    position: absolute;
-    height: 120px;
-    width: 19.8%;
-    border-radius: 19px 19px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-#legende_mouettes
-{
-    border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: 95px;
-    padding-top: 120px;
-    padding-left: 10px;
-    line-height: 1.5em;
-    background-color: #FFFFFF;
-    color: black;
-    margin-bottom: 25px;
-    
-}
-
-
-.hotelmer
-{
-    position: absolute;
-    height: 120px;
-    width: 19.8%;
-    border-radius: 19px 19px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-
-}
-
-#legende_hotelmer
-{
-   border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: 95px;
-    padding-top: 120px;
-    padding-left: 10px;
-    line-height: 1.5em;
-    background-color: #FFFFFF;
-    color: black;
-    margin-bottom: 25px;
-}
-
-.panier
-{
-    position: absolute;
-    height: 120px;
-    width: 19.8%;
-    border-radius: 19px 19px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-#legende_panier
-{
-    border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: 95px;
-    padding-top: 120px;
-    padding-left: 10px;
-    line-height: 1.5em;
-    background-color: #FFFFFF;
-    color: black;
-    margin-bottom: 25px;
-    
-}
-
-.amina
-{
-    position: absolute;
-    height: 120px;
-    width: 19.8%;
-    border-radius: 19px 19px 0px 0px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-#legende_amina
-{
-    border-radius: 20px 20px 20px 20px;
-    width: auto;
-    height: 95px;
-    padding-top: 120px;
-    padding-left: 10px;
-    line-height: 1.5em;
-    background-color: #FFFFFF;
-    color: black;
-    margin-bottom: 25px;
-    
-}
-
-#hebergementmarseille a
-{
+#hebergementmarseille a{
     text-decoration: none;
 }
 
 #heber1et2{
     width: 31.5%;
-
 }
 
 #heber3et4{
@@ -666,12 +418,9 @@ text-decoration: none;
 }
 
 
-
-
 /*partie les plus populaires*/
 
-#lespluspopu
-{
+#lespluspopu{
     
     background-color: #F2F2F2;
     width: 30%;
@@ -679,58 +428,44 @@ text-decoration: none;
     border-radius: 20px;
     margin-left:25px;
     padding-left: 25px;
-
 }
 
-#titrepopu
-{
+#titrepopu{
     display: flex;
     margin-left: 25px;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
-.graph
-{
+.graph{
     position: relative;/*pour pouvoir aligner verticalement l icone avec le titre*/
-    /*margin-left: 225px;/* permet de regler l'ecart entre le titre et l icone*/
     margin-top: 25px;/*permet de regler la position verticale de l'icone*/
     font-size: 1.4em;
     margin-right: 25px;
 }
 
-.starblue
-{
+.starblue{
     color: #0065FC;
 }
 
-.stargrise
-{
+.stargrise{
     color: #F2F2F2;
 }
 
-.prix
-{
+.prix{
     font-weight: bold;
 }
 
-.titredescases
-{
+.titredescases{
     font-size: 1.3em;
     font-weight: bold;
 }
 
-
-#populaires/*block qui englobe les 3 cartes*/
-{
+#populaires/*block qui englobe les 3 cartes*/{
     display: flex;
-    flex-direction: column;
-
-    
+    flex-direction: column;  
 }
 
-.soleilmatin/*photo*/
-{
+.soleilmatin/*photo*/{
     position: absolute;
     margin-top: 5px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     margin-bottom: 10px;
@@ -738,14 +473,10 @@ text-decoration: none;
     width: 150px;
     border-radius: 19px 0px 0px 19px; /*pour arrondir les angles*/
     margin-left: 5px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
-    
-    
+    object-fit: cover;   
 }
 
-
-#legende_soleilmatin/*bandeau blanc avec la legende*/
-{
-    
+#legende_soleilmatin/*bandeau blanc avec la legende*/{  
     border-radius: 20px 20px 20px 20px;/* bord arrondit*/
     width: auto;/*A MODIFIER pour la largeur du bandeau*/
     height: 160px;
@@ -756,21 +487,15 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    margin-right: 25px;
-    
+    margin-right: 25px;    
 }
 
-#populaires a 
-{
+#populaires a {
 text-decoration: none;
 }
 
-
-#starmatin, #stareau, #startoutbb
-{
+#starmatin, #stareau, #startoutbb{
     padding-top: 15px;
-/*padding-bottom: 20px;*/
-
 }
 
 .coeurdeau
@@ -782,14 +507,10 @@ text-decoration: none;
     width: 150px;
     border-radius: 19px 0px 0px 19px; /*pour arrondir les angles*/
     margin-left: 5px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
-    
-    
+    object-fit: cover; 
 }
 
-
-#legende_coeurdeau
-{
-    
+#legende_coeurdeau{ 
     border-radius: 20px 20px 20px 20px;/* bord arrondit*/
     width: auto;/*A MODIFIER pour la largeur du bandeau*/
     height: 160px;
@@ -799,12 +520,10 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    margin-right: 25px;
-    
+    margin-right: 25px;   
 }
 
-.bleublanc
-{
+.bleublanc{
     position: absolute;
     margin-top: 5px;/* définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     margin-bottom: 10px;
@@ -812,13 +531,10 @@ text-decoration: none;
     width: 150px;
     border-radius: 19px 0px 0px 19px; /*pour arrondir les angles*/
     margin-left: 5px;/*pour positioner la photo sur le bord du bandeau blanc mettre margin au lieu de padding*/
-    
+    object-fit: cover;
 }
 
-
-#legende_bleublanc
-{
-    
+#legende_bleublanc{   
     border-radius: 20px 20px 20px 20px;/* bord arrondit*/
     width: auto;/*A MODIFIER pour la largeur du bandeau*/
     height: 160px;
@@ -829,14 +545,12 @@ text-decoration: none;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
     margin-right: 25px;
-
 }
 
 
 /*3ème partie activité à Marseille*/
 
-.vieuxport
-{
+.vieuxport{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 660px;
     width: 100%;
@@ -846,8 +560,7 @@ text-decoration: none;
     object-fit: cover;
 }
 
-#legende_vieuxport
-{
+#legende_vieuxport{
     position: relative;/*pour positionner le bandeau sur l'image ne pas mettre absolute qui le met au milieu de la page ??*/
     bottom: 93px;/*pour positionner le bandeau au bas de la photo en ajustant les px*/
     border-radius: 0px 0px 20px 20px;
@@ -859,19 +572,13 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     font-size: 1.2em;
-    
-    
 }
 
-#actimarseille a 
-{
+#actimarseille a {
 text-decoration: none;
 }
 
-
-
-.pomegues
-{
+.pomegues{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 350px;/*300*/
     /*width: 360px;*/
@@ -882,8 +589,7 @@ text-decoration: none;
     object-fit: cover;
 }
 
-#legende_pomegues
-{
+#legende_pomegues{
     position: relative;
     bottom: 93px;
     border-radius: 0px 0px 20px 20px;/* bord arrondit*/
@@ -894,16 +600,12 @@ text-decoration: none;
     font-weight:bold;
     background-color: #FFFFFF;
     color: black;
-    font-size: 1.2em;
-    
-    
+    font-size: 1.2em;    
 }
 
-.frioul
-{
+.frioul{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 280px;/*230*/
-    /*width: 360px;*/
     width: 100%;
     border-radius: 20px;
     margin-bottom: 25px;
@@ -911,12 +613,10 @@ text-decoration: none;
     object-fit: cover;
 }
 
-#legende_frioul
-{
+#legende_frioul{
     position: relative;
     bottom: 93px;
     border-radius: 0px 0px 20px 20px;/* bord arrondit*/
-    /*width: 350px;*/
     width: auto;
     height: 50px;
     padding-top: 15px;
@@ -925,15 +625,11 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     font-size: 1.2em;
-    
-
 }
 
-.calamques
-{
+.calamques{
     margin-top: 15px;
     height: 660px;
-    /*width: 360px;*/
     width: 100%;
     border-radius: 20px; 
     margin-bottom: 25px;
@@ -941,14 +637,10 @@ text-decoration: none;
     object-fit: cover;
 }
 
-
-
-#legende_calamques
-{
+#legende_calamques{
     position: relative;/*pour positionner le bandeau sur l'image ne pas mettre absolute qui le met au milieu de la page ??*/
     bottom: 93px;/*pour positionner le bandeau au bas de la photo en ajustant les px*/
     border-radius: 0px 0px 20px 20px;
-    /*width: 350px;*/
     width: auto;
     height: 50px;
     padding-top: 15px;
@@ -957,16 +649,11 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     font-size: 1.2em;
-    
-
 }
 
-
-.notredame
-{
+.notredame{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 315px;/*265*/
-    /*width: 360px;*/
     width: 100%;
     border-radius: 20px;
     margin-bottom: 25px;
@@ -974,12 +661,10 @@ text-decoration: none;
     object-fit: cover;
 }
 
-#legende_notredame
-{
+#legende_notredame{
     position: relative;
     bottom: 93px;
     border-radius: 0px 0px 20px 20px;/* bord arrondit*/
-    /*width: 350px;*/
     width: auto;
     height: 50px;
     padding-top: 15px;
@@ -988,14 +673,11 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     font-size: 1.2em;
-    
 }
 
-.parc
-{
+.parc{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 315px;
-    /*width: 360px;*/
     width: 100%;
     border-radius: 20px;
     margin-bottom: 25px;
@@ -1003,12 +685,10 @@ text-decoration: none;
     object-fit: cover;
 }
 
-#legende_parc
-{
+#legende_parc{
     position: relative;
     bottom: 93px;
     border-radius: 0px 0px 20px 20px;/* bord arrondit*/
-    /*width: 350px;*/
     width: auto;
     height: 50px;
     padding-top: 15px;
@@ -1017,28 +697,21 @@ text-decoration: none;
     background-color: #FFFFFF;
     color: black;
     font-size: 1.2em;
-    
 }
 
-
-#actimarseille
-{
+#actimarseille{
     display: flex;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
     max-width: 100%;
     height: auto;
-    
-    
 }
 
-#carteparc/*a rajouter pour remonter les 2 cartes 5&6*/
-{
+#carteparc/*a rajouter pour remonter les 2 cartes 5&6*/{
     position:relative;
     bottom: 80px;
 }
-#cartefrioul/*a rajouter pour rapprocher les 2 cartes 5&6*/
-{
+
+#cartefrioul/*a rajouter pour rapprocher les 2 cartes 5&6*/{
     position:relative;
     bottom: 80px;
 }
@@ -1054,82 +727,64 @@ text-decoration: none;
     width: 24%
 }
 
-#carte1, #carte4
-{
-
+#carte1, #carte4{
     width: 24%;
 }
 
 
 /* Footer */
 
-footer
-{
+footer{
     display: flex;
     background-color:#F2F2F2;
     width: 100%;
     height: auto;
     margin-top:-100px;
-
 }
 
-ol
-{
+ol{
     list-style-type: none;
     padding-left: 0px; /*marge interieur definit pour aligner les listes avec les titres*/
     line-height: 1.8em;
 }
 
-#propos
-{
+#propos{
     width: 30%;
-    margin-left: 20px;/*pour aligner le texte avec les autres sections*/
-    
+    margin-left: 20px;/*pour aligner le texte avec les autres sections*/  
 }
 
-#noshebergements
-{
-    width: 35%
-    
+#noshebergements{
+    width: 35%   
 }
 
-#assistance
-{
-    width: 35%
-    
+#assistance{
+    width: 35%   
 }
 
-#propos a 
-{
+#propos a {
 text-decoration: none;
 color: black;
 }
 
-#noshebergements a 
-{
+#noshebergements a {
 text-decoration: none;
 color: black;
 }
 
-#assistance a 
-{
+#assistance a {
 text-decoration: none;
 color: black;
 }
 
-
-.ligneheber2, .ligneacti2
-{
+.ligneheber2, .ligneacti2{
     display:none;
 }
 
 
 /*partie médiaquerries*/
 
-
 @media all and (min-width: 1px)and (max-width: 680px)
 /*Breakpoint pour les mobiles 680px*/
-
 {
 
 header, section{
@@ -1138,11 +793,9 @@ header, section{
 }
 
 #leslieux, #actimarseille, #activites, h2, h4, #rechercherville, .soustexte, #ligneinfos{
-    
     margin-right: 20px;
     margin-left: 20px;
 }
-
 
 #ligneinfos{
     font-size: 0.9em;
@@ -1152,240 +805,156 @@ header, section{
     font-size:0.9em;
 }
 
-header
-    {
-       
-        display: flex;
-        flex-direction: column;
-          
-    }
 
-    .logo1
-    {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
+/*partie a remplacer*/
+
+.logo1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#barreh{
+    border-bottom: 4px solid #0065FC;
+    border-top:none;
+
+}
+
+#barrea{
+    border-bottom: 4px solid #DEEBFF;   
+    
+}
+
+#nav{
+    display: flex;
+    justify-content: none;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#menu2{
+display:flex;
+justify-content: flex-end;
+position: relative;
+bottom: 50px;
+    
+}
+
+#menu1{
+
+    
+    justify-content: space-between;
+}
+
+#barreh{
+    
+    width: 100%;
+}
+
+#barrea{
+    
+    width: 100%;
+}  
 
 
+#menu1 a{
+    
+    line-height: 35px;
+}
 
-.inscri1{
+#menu2 a{
+    
+    line-height: 35px;
+}
+
+.infos{   
+    width: 40px;
+    height: 35px;
+}
+
+.texteinfo{
+    font-size: 1.3em;
+    position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
+    bottom : 20px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/       
+}
+
+.soustexte{
+    font-size: 1.3em;
+}
+
+
+/*bouton rechercher une icone remplace le texte rechercher*/
+
+.rechercher/*le bouton recherhcer ne doit plus apparaitre car remplacer par icone search*/{
     display: none;
 }
 
-    #nav
-    {
-    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-top: 40px;
-    margin-left: 0;
-    
-    }
-
-.inscri2{
-    display:flex;
-    justify-content: flex-end;
-    position:relative;
-    bottom:30px;
-    margin-right: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-
+.loupe{
+    display: flex;/*pour faire réapparaitre l'icone */
+    border: 1px solid #F2F2F2;/*creer une border autour de l icone map*/
+    border-radius: 20px 20px 20px 20px;
+    height: 52px;
+    width: 60px;/*regler la longueur en fonction du texte du bouton */
+    background-color: #0065FC;
+    font-size: 1.1em;
+    padding-top: 15px;
+    padding-left: 18px;
+    position: relative;
+    bottom: 2px;
+    color:#FFFFFF;
+    cursor: pointer;
+    transform: scale(1);/*valeur initiale */
+    transition: transform 400ms;/*timing de la transformation*/
 }
 
-
-.heber1{
-    
-    padding-left: 50px;
-}
-
-.acti1{
-
-    padding-right: 80px;
-}
-    
-
-    .ligneheber, .ligneacti
-    {
-        display: none;
-    }
-
-.ligne1 {
-
-width:100%;
-height: 4px;
-background-color: #0065FC;
-cursor: pointer;
-
-}
-
-.ligne2 {
-
-width:100%;
-height: 4px;
-background-color: #DEEBFF;
-cursor: pointer;
-
-}
-
-
-#barre2{
-    display:flex;
-    flex-direction: row;
-    
-    height: auto;
-    width: auto;
-    margin-top:35px;
-
-}
-
-    /*.ligneheber2, .ligneacti2*/
-    {
-        display: flex;
-        height: 5px;
-        
-        margin-left: 0;
-        border:none;
-    }
-
-    /*.ligneheber2*/
-    {
-        position:relative;
-        margin-top: 30px;
-        width: auto;
-        background-color: #0065FC;
-    }
-
-
-    /*.ligneacti2*/
-    {
-        position:relative;
-        bottom: 21px;
-        margin-left: 200px;
-        width: auto;/*240px*/
-        background-color: #DEEBFF;
-    }
-
-/*.ligneacti2 a:visited/* a redefinir car ne fonctionne pas !!!*/
-    {
-    background-color: #DEEBFF; 
-    }
-
-    .infos
-    {   
-    width: 40px;
-    height: 35px;
-    }
-
-    .texteinfo
-    {
-        font-size: 1.3em;
-        position: relative;/*pour pouvoir aligner verticalement le texte avec l'icone+border+fond*/
-        bottom : 20px;/*permet de regler la position du texte pour l'aligner verticalement avec la bulle*/       
-    }
-
-    .soustexte
-    {
-        font-size: 1.3em;
-    }
-
-    /*bouton rechercher une icone remplace le texte rechercher*/
-
-    .rechercher/*le bouton recherhcer ne doit plus apparaitre car remplacer par icone search*/
-    {
-        display: none;
-    }
-
-    .loupe
-    {
-        display: flex;/*pour faire réapparaitre l'icone */
-        border: 1px solid #F2F2F2;/*creer une border autour de l icone map*/
-        border-radius: 20px 20px 20px 20px;
-        height: 52px;
-        width: 60px;/*regler la longueur en fonction du texte du bouton */
-        background-color: #0065FC;
-        font-size: 1.1em;
-        padding-top: 15px;
-        padding-left: 18px;
-        position: relative;
-        bottom: 2px;
-        color:#FFFFFF;
-        cursor: pointer;
-        transform: scale(1);/*valeur initiale */
-        transition: transform 400ms;/*timing de la transformation*/
-
-    }
-
-
-    .loupe:hover
-    {
-  
+.loupe:hover{
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
     transform: scale(1.15);/*pour faire aggrandir valeur finale*/
-    }
+}
         
-    #ville
-    {
-        display:flex;
-        width: 300px;/*regler la longueur en fonction du texte du bouton */
-        border-radius: 0px 20px 20px 0px;
-    }
+#ville{
+    display:flex;
+    width: 300px;/*regler la longueur en fonction du texte du bouton */
+    border-radius: 0px 20px 20px 0px;
+}
 
-    /*section rechercher ville + boutons filtres*/
 
-    #filtres
-    {
-        flex-direction: column;
-                
-    }
+/*section rechercher ville + boutons filtres*/
 
-    #boutonfami, #boutonroman, #boutonani
-    {
-        margin-top:10px;
-    }
+#filtres{
+    flex-direction: column;             
+}
 
-    #mqecofa
-    {
-        display: flex;
+#boutonfami, #boutonroman, #boutonani{
+    margin-top:10px;
+}
 
-    }
+#mqecofa{
+    display: flex;
+}
 
-    #boutonfami
-    {
+#boutonfami{
     position: relative;/*permet de regler le decalage verticale pour aligner les 2 boutons*/
     bottom: 12px;
-    }
+}
+
+#ligneinfos{
+    margin-top: 50px;
+}
 
 
-    #ligneinfos
-    {
-        margin-top: 50px;
-    }
+/*section hébergement à marseille*/
 
+#hebergement/*block qui englobe herbergement à Marseille et aside*/{ 
+    flex-direction: column-reverse;/* pour mettre la partie aside en 1er*/   
+}
 
-    /*section hébergement à marseille*/
-
-
-    #hebergement/*block qui englobe herbergement à Marseille et aside*/
-    {
-    
-    flex-direction: column-reverse;/* pour mettre la partie aside en 1er*/
-    
-    }
-
-    #leslieux/* partie qui contient les cartes hébergement*/
-    {
-    
+#leslieux/* partie qui contient les cartes hébergement*/{ 
     flex-direction: column;
-
-    }
+}
 
 #heber1et2{
     width: 100%;
-
 }
 
 #heber3et4{
@@ -1398,136 +967,43 @@ cursor: pointer;
     width: 100%;
 }
 
-
-#hebergementmarseille
-{
-    
+#hebergementmarseille{
     background-color: #FFFFFF;
     width: 100%;
     height: auto;/*pour la hauteur du block hebergement faire pareil pour aside*/
     padding-left: 0;/*mettre 0 pour supprimer la barre de défilement en bas*/
     padding-right: 0;/* mettre 0 pour annuler les marges*/
     border-radius: 0px;
-
 }
 
-
-.cannebiere/*redimentionner les photos*/
-{
-    
-    width: 88%;
-    height: 140px;
-    
+.leslieux__img/*photo*/{
+    width: 89.3%;
+    height: 140px;  
 }
 
-#legende_cannebiere/*etiquette blanche*/
-{
-    
+.leslieux__legende/*etiquette blanche*/{ 
     height: 95px;
     padding-top: 140px;
-    
+    box-shadow: 0px 0px 16px #DEEBFF;
 }
 
-.hotelduport
-{
-    width: 88%;
-    height: 140px;
-}
-
-#legende_hotelduport/*etiquette blanche*/
-{
-    
-    height: 95px;
-    padding-top: 140px;
-    
-}
-.mouettes
-{
-    width: 88%;
-    height: 140px;
-}
-
-#legende_mouettes/*etiquette blanche*/
-{
-    
-    height: 95px;
-    padding-top: 140px;
-    
-}
-
-
-.hotelmer
-{
-    width: 88%;
-    height: 140px;
-
-}
-
-#legende_hotelmer/*etiquette blanche*/
-{
-    
-    height: 95px;
-    padding-top: 140px;
-    
-}
-
-.panier
-{
-    width: 88%;
-    height: 140px;
-}
-
-#legende_panier/*etiquette blanche*/
-{
-    
-    height: 95px;
-    padding-top: 140px;
-    
-}
-
-.amina
-{
-   width: 88%;
-   height: 140px;
-}
-
-#legende_amina/*etiquette blanche*/
-{
-    
-    height: 95px;
-    padding-top: 140px;
-    
-}
-    #legende_cannebiere, #legende_hotelmer, #legende_hotelduport, #legende_panier, #legende_mouettes, #legende_amina
-
-    {
-        box-shadow: 0px 0px 16px #DEEBFF;
-    }
-
-#lespluspopu
-{
-    
+#lespluspopu{
     background-color: #F2F2F2;
     width: 100%;
     height: auto;
     border-radius: 0px;
     margin-bottom: 25px;
     margin-left:0;
-    padding-left: 0;
-    
+    padding-left: 0; 
 }
 
-
-#titrepopu
-{
+#titrepopu{
     display: flex;
     margin-left: 0;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
-.graph
-{
+.graph{
     position: relative;/*pour pouvoir aligner verticalement l icone avec le titre*/
     margin-top: 25px;/*permet de regler la position verticale de l'icone*/
     font-size: 1.4em;
@@ -1539,163 +1015,105 @@ cursor: pointer;
     margin-left: 15px;
 }
 
+
 /*section activités à marseille*/
 
-#actimarseille
-    {
+#actimarseille{
         
-        flex-direction: column;
-        /*justify-content: flex-start;*/
-        max-height: 1850px;
-     
-    }
+    flex-direction: column;
+    max-height: 1850px;
+}
 
 #carte5et6{
     margin-left: 0;
     width: 100%
-
-
 }
 
 #carte2et3{
     margin-left: 0;
     margin-right: 0;
     width: 100%
-
 }
 
-
-#carte1, #carte4
-{
-
+#carte1, #carte4{
     width: 100%;
 }
 
-/*#carteparc/*a rajouter pour rapprocher les 2 cartes 5&6*/
-{
-    position:relative;
-    bottom: 0;
-}
-
-/*#cartefrioul/*a rajouter pour rapprocher les 2 cartes 5&6*/
-{
-    position:relative;
-    bottom: 0;
-}
-
-
-.vieuxport
-{
-    
+.vieuxport{ 
     height: 245px;
-    
 }
 
-
-.pomegues
-{
-    
+.pomegues{ 
     height: 245px;
     position: relative;
-    bottom:70px;
-    
+    bottom:70px;  
 }
 
-#legende_pomegues
-{
+#legende_pomegues{
     position: relative;
     bottom: 163px;
-
 }
 
-.frioul
-{
-    
+.frioul{
     height: 245px;
     position: relative;
-    bottom:60px;
-    
+    bottom:60px; 
 }
 
-#legende_frioul
-{
+#legende_frioul{
     position: relative;
     bottom: 153px;
-
 }
 
-
-.calamques
-{
+.calamques{
     height: 245px;
     position: relative;
-    bottom:210px;
-    
+    bottom:210px;    
 }
 
-#legende_calamques
-{
+#legende_calamques{
     position: relative;
     bottom: 303px;
-
 }
 
-.notredame
-{
+.notredame{
     height: 245px;
     position: relative;
-    bottom:280px;
-    
+    bottom:280px; 
 }
 
-#legende_notredame
-{
+#legende_notredame{
     position: relative;
     bottom: 373px;
-
 }
 
-.parc
-{
+.parc{
     height: 245px;
     position: relative;
-    bottom:270px;
-    
+    bottom:270px;  
 }
 
-#legende_parc
-{
+#legende_parc{
     position: relative;
     bottom: 363px;
-
 }
 
+footer{
+    flex-direction: column;    
+}
 
+#propos{
+    width: 70%;
+}
 
-    footer
-    {
-        flex-direction: column;
-        
-    }
-
-    #propos{
-        width: 70%;
-    }
-
-    #noshebergements
-    {
-    
+#noshebergements{
     margin-left: 25px;
     width: 50%;
-    
-    }
+}
 
-    #assistance
-    {
-    
+#assistance{
     margin-left: 25px;
-    
-    }
+}
 
 footer h4{
     margin-left: 0;
@@ -1705,154 +1123,59 @@ footer h4{
 }
 
 
-
-@media all and (min-width: 681px)and (max-width: 1400px)
+@media all and (min-width: 681px) and (max-width: 1450px)
 /*Breakpoint 1 pour les tablettes*/
 
 {
+
+#ligneinfos{
+    margin-top: 35px;
+}
 
 #filtres{
     flex-wrap: wrap;
 }
 
-#hebergement/*block qui englobe herbergement à Marseille et aside*/
-    {
-    
-    flex-direction: column-reverse;/* pour mettre la partie aside en 1er*/
-    
-    }
+#hebergement/*block qui englobe herbergement à Marseille et aside*/{ 
+    flex-direction: column-reverse;/* pour mettre la partie aside en 1er*/  
+}
 
-#hebergementmarseille
-{
-    
+#hebergementmarseille{
     background-color: #F2F2F2;
     width: 100%;
     height: auto;/*pour la hauteur du block hebergement faire pareil pour aside*/
     padding-left: 25px;
     border-radius: 20px;
     padding-right: 0;
-
 }
 
-
-.cannebiere/*redimentionner les photos*/
-{
-    
-    width: 29.3%;
-    height: 160px;
-    
+.leslieux__img/*photo*/{
+    width: 29.5%;
+    height: 160px;   
 }
 
-#legende_cannebiere/*etiquette blanche*/
-{
+.leslieux__legende/*etiquette blanche*/{
     
     height: 105px;
     padding-top: 160px;
-    
+    box-shadow: 0px 0px 16px #DEEBFF;
 }
 
-.hotelduport
-{
-    width: 29.3%;
-    height: 160px;
-}
-
-#legende_hotelduport/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-.mouettes
-{
-    width: 29.3%;
-    height: 160px;
-}
-
-#legende_mouettes/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-
-.hotelmer
-{
-    width: 29.3%;
-    height: 160px;
-
-}
-
-#legende_hotelmer/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-.panier
-{
-    width: 29.3%;
-    height: 160px;
-}
-
-#legende_panier/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-.amina
-{
-   width: 29.3%;
-   height: 160px;
-}
-
-#legende_amina/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-
-
-
-
-#lespluspopu
-{
-    
-    /*background-color: #F2F2F2;*/
+#lespluspopu{   
     width: 100%;
     margin-bottom: 25px;
-    /*height: auto;*/
-    /*border-radius: 20px;*/
     margin-left:0;
     padding-left: 25px;
-
 }
 
 #populaires{
-    flex-direction: row;
-     
-    
+    flex-direction: row;   
 }
 
 
 /*largeur des cartes à modifier*/
 
-
-
-#legende_soleilmatin/*bandeau blanc avec la legende*/
-{
-    
+#legende_soleilmatin/*bandeau blanc avec la legende*/{
     border-radius: 20px 20px 20px 20px;/* bord arrondit*/
     width: auto;/*modif*/
     height: 160px;
@@ -1863,17 +1186,9 @@ footer h4{
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    /*margin-right: 25px;*/
-    
 }
 
-
-
-
-
-#legende_coeurdeau
-{
-    
+#legende_coeurdeau{
     border-radius: 20px 20px 20px 20px;/* bord arrondit*/
     width: auto;/*modif*/
     height: 160px;
@@ -1883,18 +1198,9 @@ footer h4{
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    /*margin-right: 25px;*/
-    
-    
 }
 
-
-
-
-#legende_bleublanc
-{
-    
-    /*border-radius: 20px 20px 20px 20px;/* bord arrondit*/
+#legende_bleublanc{
     width: auto;/*modif*/
     height: 160px;
     padding-top: 1px;
@@ -1903,53 +1209,38 @@ footer h4{
     background-color: #FFFFFF;
     color: black;
     margin-bottom: 25px;/*pour mettre un espace entre les cartes*/
-    /*margin-right: 25px;*/
-    
-
 }
 
-
 #pop1, #pop2, #pop3{
-
-width: 33%;
-
+    width: 33%;
 }
 
 #pop2, #pop3{
-
     margin-left: 10px;
 }
 
-
-#titrepopu
-{
-    
+#titrepopu{
     margin-left: 25px;
     display: flex;
     justify-content: space-between;
-    
 }
 
-.graph
-{
-    
-    margin-right: 30px;/* permet de regler l'ecart entre le titre et l icone*/
-      
+.graph{
+    margin-right: 30px;/* permet de regler l'ecart entre le titre et l icone*/     
 }
 
 #hebergementmarseille h2{
-
     padding-left: 25px;
 }
 
 #hebergementmarseille h4{
-
     padding-left: 25px;
 }
 
+
 /*activité a marseille*/
-.vieuxport
-{
+
+.vieuxport{
     margin-top: 15px;/*La propriété margin-top définit l'espace vertical pour la marge appliquée en haut de l'élément.*/
     height: 560px;
     width: 100%;
@@ -1958,8 +1249,7 @@ width: 33%;
     box-shadow: 0px 0px 20px #DEEBFF;/*pour mettre une ombre à l'image*/
 }
 
-#legende_vieuxport
-{
+#legende_vieuxport{
     position: relative;/*pour positionner le bandeau sur l'image ne pas mettre absolute qui le met au milieu de la page ??*/
     bottom: 93px;/*pour positionner le bandeau au bas de la photo en ajustant les px*/
     border-radius: 0px 0px 20px 20px;
@@ -1970,357 +1260,196 @@ width: 33%;
     font-weight: bold;
     background-color: #FFFFFF;
     color: black;
-    font-size: 1.2em;
-    
-    
+    font-size: 1.2em;  
 }
 
-#actimarseille a 
-{
-text-decoration: none;
+#actimarseille a {
+    text-decoration: none;
 }
 
-
-
-.pomegues
-{
-    
-    height: 300px;/*300*/
-    
+.pomegues{ 
+    height: 300px;/*300*/   
 }
 
-
-
-.frioul
-{
-   
-    height: 230px;/*230*/
-    
+.frioul{
+    height: 230px;/*230*/  
 }
 
+.calamques{
+    height: 560px;  
+}
 
+.notredame{   
+    height: 265px;/*265*/   
+}
 
-.calamques
-{
-   
-    height: 560px;
-    
+.parc{  
+    height: 265px;   
 }
 
 
-
-.notredame
-{
-    
-    height: 265px;/*265*/
-    
 }
-
-
-.parc
-{
-    
-    height: 265px;
-    
-}
-
-
-
-}
-
 
 
 @media all and (min-width: 908px)and (max-width: 1177px)
 /*Breakpoint 2 pour les tablettes*/
 
-
 {
 
- #populaires{
-    flex-wrap: wrap;
-
-     
-    
+#populaires{
+    flex-wrap: wrap;  
 }   
 
 #pop1, #pop2, #pop3{
-
-width: 45%;
-
+    width: 45%;
 }
 
 #pop1, #pop3{
-
     margin-left: 25px;
 }
 
-
-.graph
-{
-    
+.graph{ 
     margin-right: 105px;
 }
 
-.cannebiere/*redimentionner les photos*/
-{
-    
+.leslieux__img/*photo*/{
+    width: 29%;
+    height: 160px;   
+}
+
+.leslieux__legende/*etiquette blanche*/{  
+    height: 105px;
+    padding-top: 160px;
+    box-shadow: 0px 0px 16px #DEEBFF;
+}
+
+.cannebiere/*redimentionner les photos*/{   
     width: 29.5%;
-    height: 160px;
-    
+    height: 160px;   
 }
 
-#legende_cannebiere/*etiquette blanche*/
-{
-    
+#legende_cannebiere/*etiquette blanche*/{  
     height: 105px;
-    padding-top: 160px;
-    
+    padding-top: 160px;    
 }
 
-.hotelduport
-{
+.hotelduport{
     width: 28.5%;
     height: 160px;
 }
 
-#legende_hotelduport/*etiquette blanche*/
-{
-    
+#legende_hotelduport/*etiquette blanche*/{ 
     height: 105px;
-    padding-top: 160px;
-    
+    padding-top: 160px;   
 }
-.mouettes
-{
+
+.mouettes{
     width: 28.5%;
     height: 160px;
 }
 
-#legende_mouettes/*etiquette blanche*/
-{
-    
+#legende_mouettes/*etiquette blanche*/{   
     height: 105px;
-    padding-top: 160px;
-    
+    padding-top: 160px;  
 }
 
-
-.hotelmer
-{
-    width: 28.5%;
-    height: 160px;
-
-}
-
-#legende_hotelmer/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-.panier
-{
+.hotelmer{
     width: 28.5%;
     height: 160px;
 }
 
-#legende_panier/*etiquette blanche*/
-{
-    
+#legende_hotelmer/*etiquette blanche*/{    
     height: 105px;
-    padding-top: 160px;
-    
+    padding-top: 160px;    
 }
 
-.amina
-{
+.panier{
+    width: 28.5%;
+    height: 160px;
+}
+
+#legende_panier/*etiquette blanche*/{   
+    height: 105px;
+    padding-top: 160px;  
+}
+
+.amina{
    width: 28.5%;
    height: 160px;
 }
 
-#legende_amina/*etiquette blanche*/
-{
-    
+#legende_amina/*etiquette blanche*/{   
     height: 105px;
-    padding-top: 160px;
-    
+    padding-top: 160px;   
 }
 
+
 }
+
 
 @media all and (min-width: 681px)and (max-width: 907px)
 /*Breakpoint 3 pour les tablettes*/
 
-
 {
+
+#boutonani{
+    margin-left: 70px;
+}
 
  #populaires{
     flex-direction: column;
-
 }   
 
-.graph
-{
-    
+.graph{ 
     margin-right: 195px;
 }
 
 #pop1, #pop2, #pop3{
-
-width: 75%;
-
+    width: 75%;
 }
 
 #pop1, #pop3, #pop2{
-
     margin-left: 25px;
 }
 
-.cannebiere/*redimentionner les photos*/
-{
-    
+.leslieux__img/*photo*/{
     width: 27.5%;
-    height: 160px;
-    
+    height: 160px;  
 }
 
-#legende_cannebiere/*etiquette blanche*/
-{
-    
+.leslieux__legende/*etiquette blanche*/{  
     height: 105px;
     padding-top: 160px;
-    
-}
-
-.hotelduport
-{
-    width: 27.5%;
-    height: 160px;
-}
-
-#legende_hotelduport/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-.mouettes
-{
-    width: 27.5%;
-    height: 160px;
-}
-
-#legende_mouettes/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-
-.hotelmer
-{
-    width: 27.5%;
-    height: 160px;
-
-}
-
-#legende_hotelmer/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-.panier
-{
-    width: 27.5%;
-    height: 160px;
-}
-
-#legende_panier/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
-}
-
-.amina
-{
-   width: 27.5%;
-   height: 160px;
-}
-
-#legende_amina/*etiquette blanche*/
-{
-    
-    height: 105px;
-    padding-top: 160px;
-    
+    box-shadow: 0px 0px 16px #DEEBFF;
 }
 
 .titredescases{
     font-size: 1.1em;
 }
 
-.vieuxport
-{
-    
-    height: 360px;
-    
+.vieuxport{  
+    height: 360px;   
 }
 
-.pomegues
-{
-    
-    height: 200px;/*300*/
-    
+.pomegues{   
+    height: 200px;/*300*/  
 }
 
-
-
-.frioul
-{
-   
-    height: 130px;/*230*/
-    
+.frioul{  
+    height: 130px;/*230*/   
 }
 
-
-
-.calamques
-{
-   
-    height: 360px;
-    
+.calamques{  
+    height: 360px;  
 }
 
-
-
-.notredame
-{
-    
-    height: 165px;/*265*/
-    
+.notredame{   
+    height: 165px;/*265*/   
 }
 
-
-.parc
-{
-    
-    height: 165px;
-    
+.parc{   
+    height: 165px;   
 }
-
-
-
-
 
 
 }

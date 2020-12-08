@@ -16,40 +16,24 @@
 
         <header><!--logo +3 ancres-->
             
-                <img src="Reservia3x.png" class="logo1" alt="Logo Réservia" />
-                  
-                <div class="inscri2"><a href="#">S'inscrire</a></div>
-
-            <div id="barre">
-                <a href="#hebergements"><hr class="ligneheber"></a><!--ligne au dessus du lien hébergement-->
-                <a href="#activites"><hr class="ligneacti"></a>
-            </div>
-            
+            <img src="Reservia3x.png" class="logo1" alt="Logo Réservia" />       
+                
             <div id="nav">
-                        
-                    <span class="heber1"><a href="#hebergement">Hébergements</a></span>                      
-                    <span class="acti1"><a href="#activites">Activités</a></span>
-                        
-                    <span class="inscri1"><a href="#">S'inscrire</a></span>
-            </div>
-                  
-            
-            <div id="barre2">
-                <div class="ligne1">
+                <div id="menu1">
+                    <div id="barreh"><a href="#hebergement">Hébergements</a></div>
+                    <div id="barrea"><a href="#activites">Activités</a></div>
                 </div>
+                <div id="menu2">
+                    <div id="inscrit"><a href="#">S'inscrire</a></div>
+                </div>
+            </div>
 
-                <div class="ligne2">
-                </div>
-            </div>
-                   
-        
         </header>
-
 
         <section><!--recherche de la ville-->
 
-                    <h2>Trouver votre hébergement pour des vacances de rève</h2>
-                    <div class="soustexte"><p>En plein centre ville ou en pleine nature</p></div>
+                <h2>Trouver votre hébergement pour des vacances de rève</h2>
+                <div class="soustexte"><p>En plein centre ville ou en pleine nature</p></div>
 
             <!--zone de recherche icone + formulaire de recherhce + bouton-->
                 
@@ -63,14 +47,12 @@
                     </div>
                     <button class="rechercher">Rechercher</button>        
                     
-
                 </div>
             
             <!--ligne des filtes : texte + 4 boutons -->
 
             <div id="filtres">
                 
-            
                 <div class="titrefiltres">
                     <h4>Filtres</h4>
                 </div>
@@ -81,7 +63,6 @@
                     <div class="texteeco"><p>Economique</p></div>
                 </div>
         
-
                 <div id="boutonfami"><!--bouton famillial-->
                     <button class="fami"><i class="fas fa-child"></i></button>
                     <div class="textefami"><p>Famillial</p></div>
@@ -93,47 +74,37 @@
                     <div class="texteroman"><p>Romantique</p></div>
                 </div>
 
-
                 <div id="boutonani"><!--Animaux autorisés-->
                     <button class="ani"><i class="fas fa-dog"></i></button>
                     <div class="texteani"><p>Animaux autorisés</p></div>
                 </div>
-
-
 
             </div>
 
             <!--ligne infos : une icome + texte-->
 
                 <div id="ligneinfos"><!--une icome avec une bulle/border/font + un texte-->
-            
-                <button class="infos"><i class="fas fa-info"></i></button><!--bouton non fonctionnel-->
-                <div class="texteinfo"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
-                
+                	<button class="infos"><i class="fas fa-info"></i></button><!--bouton non fonctionnel-->
+                	<div class="texteinfo"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
                 </div>
 
         </section>
 
-
-            
-    <section><!--section hébergements à Marseille-->
+    	<section><!--section hébergements à Marseille-->
          <!--cette section contient une partie hebergement et une sous partie les plus populaires (aside)-->
             
-    <div id="hebergement"><!--block qui englobe hebergement à Marseille et les + populaires-->
+    		<div id="hebergement"><!--block qui englobe hebergement à Marseille et les + populaires-->
                     
-        
-        <div id="hebergementmarseille"><!--block hébergement à Marseille-->
-                
-            <h2>Hébergement à Marseille</h2>    
+        		<div id="hebergementmarseille"><!--block hébergement à Marseille-->         
+            	<h2>Hébergement à Marseille</h2>    
              
+            		<div id="leslieux"><!--block qui englobe les 6 cartes hébergement-->
+     
+                    	<div id="heber1et2">
 
-            <div id="leslieux"><!--block qui englobe les 6 cartes hébergement-->
-
-                        
-                    <div id="heber1et2">
                         <!--1 Auberge la Cannebière-->
-                        <a href="#"><img src="marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="cannebiere" alt="Photo Auberge la Cannebiere" />
-                        <div id="legende_cannebiere">
+                        <a href="#"><img src="marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="leslieux__img" alt="Photo Auberge la Cannebiere" />
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Auberge la Cannebière</span></br>
                         Nuit à partir de <span class="prix">25€</span></br>
@@ -144,10 +115,10 @@
                         <span class="stargrise"><i class="fas fa-star"></i></span>
                         </p>
                         </div></a>
-
+                        
                         <!--4 hotel de la mer-->
-                        <a href="#"><img src="annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="hotelmer" alt="Photo Hotel de la mer" />
-                        <div id="legende_hotelmer">
+                        <a href="#"><img src="annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="leslieux__img" alt="Photo Hotel de la mer" />
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Hôtel de la mer</span></br>
                         Nuit à partir de <span class="prix">46€</span></br>
@@ -159,15 +130,13 @@
                         </p>
                         </div></a>
 
-                    </div>
+                    	</div>
 
+                    	<div id="heber3et4">
 
-                    <div id="heber3et4">
-
-
-                        <!--2 hotel du port-->
-                        <a href="#"><img src="fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="hotelduport" alt="Photo Hôtel du port"/>
-                        <div id="legende_hotelduport">
+						<!--2 hotel du port-->
+                        <a href="#"><img src="fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="leslieux__img" alt="Photo Hôtel du port"/>
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Hôtel du port</span></br>
                         Nuit à partir de <span class="prix">52€</span></br>
@@ -178,10 +147,10 @@
                         <span class="starblue"><i class="fas fa-star"></i></span>
                         </p>
                         </div></a>
-                        
+                         
                         <!--5 auberge le panier-->
-                        <a href="#"><img src="nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="panier" alt="Photo Auberge Le Panier" />
-                        <div id="legende_panier">
+                        <a href="#"><img src="nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="leslieux__img" alt="Photo Auberge Le Panier" />
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Auberge Le Panier</span></br>
                         Nuit à partir de <span class="prix">23€</span></br>
@@ -193,14 +162,13 @@
                         </p>
                         </div></a>
 
-                    </div>    
+                    	</div>    
 
-                    <div id="heber5et6">
-                        
+                    	<div id="heber5et6">
 
                         <!--3 hotel les Mouettes-->
-                        <a href="#"><img src="reisetopia-B8WIgxA_PFU-unsplash.jpg" class="mouettes" alt="Photo Hôtel les Mouettes"/>
-                        <div id="legende_mouettes">
+                        <a href="#"><img src="reisetopia-B8WIgxA_PFU-unsplash.jpg" class="leslieux__img" alt="Photo Hôtel les Mouettes"/>
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Hôtel les Mouettes</span></br>
                         Nuit à partir de <span class="prix">76€</span></br>
@@ -213,8 +181,8 @@
                         </div></a>
 
                         <!--6 hotel chez amina-->
-                        <a href="#"><img src="febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="amina" alt="Photo Hôtel chez Amina" />
-                        <div id="legende_amina">
+                        <a href="#"><img src="febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="leslieux__img" alt="Photo Hôtel chez Amina" />
+                        <div class="leslieux__legende">
                         <p>
                         <span class="titredescases">Hôtel chez Amina</span></br>
                         Nuit à partir de <span class="prix">96€</span></br>
@@ -226,27 +194,27 @@
                         </p>
                         </div></a>
 
-                    </div>
+                    	</div>
 
-            </div>
+            		</div>
 
-            <a href="#"><h4>Afficher plus</h4></a>       
+            	<a href="#"><h4>Afficher plus</h4></a>       
 
-        </div>
-
+        		</div>
         
-        <div id="lespluspopu"><!--les plus populaires-->
+        		<div id="lespluspopu"><!--les plus populaires-->
              
-             <div id="titrepopu">
+             	<div id="titrepopu">
                 <h2>Les plus populaires</h2>
                 <span class="graph"><i class="fa fa-chart-line"></i></span>
-             </div>  
+             	</div>  
 
-             <div id="populaires"><!--block qui englobe les 3 cartes-->
+             	<div id="populaires"><!--block qui englobe les 3 cartes-->
 
                         <!--hotel soleil du matin-->
-                    <div id="pop1">
-                        <a href="#"><img src="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="soleilmatin" alt="Photo Hôtel" Le soleil du matin"/>
+                    	<div id="pop1">
+
+                        <a href="#"><img src="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="soleilmatin" alt="Photo Hôtel"/>
                         <div id="legende_soleilmatin">
                         <p>
                         <span class="titredescases">Hôtel Le soleil du matin</span></br>
@@ -260,10 +228,12 @@
                             </div>
                         </p>
                         </div></a>
-                    </div>
+
+                    	</div>
 
                         <!--chambres d'hotes-->
-                    <div id="pop2">    
+                    	<div id="pop2">
+
                         <a href="#"><img src="aw-creative-VGs8z60yT2c-unsplash.jpg" class="coeurdeau" alt="Photo Au Coeur de l'eau"/>
                         <div id="legende_coeurdeau">
                         <p>
@@ -278,10 +248,12 @@
                             </div>
                         </p>
                         </div></a>
-                    </div>
+
+                    	</div>
 
                         <!--hotel tout bleu blanc-->
-                    <div id="pop3">    
+                    	<div id="pop3">
+
                         <a href="#"><img src="febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="bleublanc" alt="Photo Hôtel Tout bleu et blanc"/>
                         <div id="legende_bleublanc">
                         <p>
@@ -296,27 +268,22 @@
                             </div>
                         </p>
                         </div></a>
-                    </div>    
+
+                    	</div>    
 
 
-             </div>
+             	</div>
                     
-        </div>
-         
-
-
-
-    </div>
-    </section>
-
-              
-    <section><!--partie Activités à marseille-->
+        	</div>
+    	</div>
+    	</section>
+   
+    	<section><!--partie Activités à marseille-->
               
                 <h2 id="activites">Activités à Marseille</h2>
 
                 <div id="actimarseille"><!--block qui englobe toutes les 6 cartes d'activités-->
-                    
-                    
+                      
                     <div id="carte1">
                         <!-- carte activité Vieux port-->
                         <a href="#"><img src="reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="vieuxport" alt="Photo Vieux Port de Marseille"/>
@@ -368,51 +335,37 @@
                                        
                 </div>           
 
-    </section>
+    	</section>
 
-
-<footer><!--a propos nos hébergements Assistance-->
-        
-            
-                <div id="propos">
-                                     
+		<footer><!--a propos nos hébergements Assistance-->
+                 
+                <div id="propos">                                    
                     <h4>A propos</h4>
-                    
                     <ol>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales de vente</a></li>
                         <li><a href="#">Données et confidentialité</a></li>
-                    </ol>
-                    
-                    
-
+                    </ol>   
                 </div>
 
                 <div id="noshebergements">
-                    
-                    
-                    <h4>Nos hébergements</h4>
-                    
+                    <h4>Nos hébergements</h4>     
                     <ol>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Soumettre votre hôtel</a></li>
-                    </ol>
-                    
+                    </ol>    
                 </div>
 
                 <div id="assistance">
-
                     <h4>Assistance</h4>
                     <ol>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ol>
                 </div>
-        
-            
-            </footer>
 
-
+    	</footer>
 
     </body>
+
 </html>
